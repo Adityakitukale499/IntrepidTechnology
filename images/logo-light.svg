@@ -1,0 +1,12 @@
+<svg width="250" height="60" viewBox="0 0 250 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left Icon -->
+  <rect y="8" width="44" height="44" rx="10" fill="#4E6BFF"/>
+  <path d="M22.625 27.625H30.1111L20.4861 41.5278V31.9028H13L22.625 18V27.625Z" fill="white"/>
+
+  <!-- Company Name -->
+  <text x="50" y="38" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="black" font-weight="bold">
+    Intrepid Technology
+  </text>
+</svg>
+
+
