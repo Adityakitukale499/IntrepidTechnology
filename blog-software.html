@@ -28,7 +28,7 @@
   <body
     x-data="{ page: 'blog-software', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
-         darkMode = JSON.parse(localStorage.getItem('darkMode'));
+         darkMode = JSON.parse(localStorage.getItem('darkMode')) || true;
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
     :class="{'b eh': darkMode === true}"
   >
@@ -41,8 +41,8 @@
       <div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
         <div class="vd to/4 tc wf yf">
           <a href="index.html">
-            <img class="om" src="images/logo-light.svg" alt="Logo Light" />
-            <img class="xc nm" src="images/logo-dark.svg" alt="Logo Dark" />
+            <img class="om" src="images/logo-light.png" alt="Logo Light" />
+            <img class="xc nm" src="images/logo-dark.png" alt="Logo Dark" />
           </a>
 
           <!-- Hamburger Toggle BTN -->
@@ -91,7 +91,7 @@
                   >Home</a
                 >
               </li>
-              <li><a href="index.html#services" class="xl">Services</a></li>
+              <li><a href="services.html" class="xl">Services</a></li>
               <li class="c i" x-data="{ dropdown: false }">
                 <a
                   href="#"
@@ -159,7 +159,7 @@
                 <!-- Dropdown End -->
               </li>
               <li><a href="blog-grid.html" class="xl">All Blogs</a></li>
-              <li><a href="index.html#support" class="xl">Contact</a></li>
+              <li><a href="contact.html" class="xl">Contact</a></li>
             </ul>
           </nav>
 
@@ -226,7 +226,7 @@
               <div class="tc uf wf ag jq mb">
                 <div class="tc wf ag">
                   <img src="images/icon-man.svg" alt="User" />
-                  <p>Bhuvnesh Sharma</p>
+                  <p>Intrepid Technology Team</p>
                 </div>
                 <div class="tc wf ag">
                   <img src="images/icon-calender.svg" alt="Calender" />
@@ -526,8 +526,8 @@
           <div class="tc uf ap gg fp">
             <div class="animate_top zd/2 to/4">
               <a href="index.html">
-                <img src="images/logo-light.svg" alt="Logo" class="om" />
-                <img src="images/logo-dark.svg" alt="Logo" class="xc nm" />
+                <img src="images/logo-light.png" alt="Logo" class="om" />
+                <img src="images/logo-dark.png" alt="Logo" class="xc nm" />
               </a>
 
               <p class="lc fb">

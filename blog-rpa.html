@@ -5,28 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Business Process Automation Services | Intrepid Technology - Workflow
-      Automation Solutions
+      RPA Automation Services | Robotic Process Automation Solutions - Intrepid
+      Technology
     </title>
     <meta
       name="description"
-      content="Streamline your business operations with intelligent automation solutions. RPA, workflow automation, and custom automation services to boost productivity and reduce costs."
+      content="Transform your business with Robotic Process Automation (RPA). Automate repetitive tasks, reduce costs, and improve efficiency with our expert RPA implementation services."
     />
     <meta
       name="keywords"
-      content="business process automation, RPA, workflow automation, intelligent automation, process optimization, productivity tools"
+      content="RPA, Robotic Process Automation, UiPath, Automation Anywhere, business process automation, workflow automation, intelligent automation"
     />
     <meta name="author" content="Intrepid Technology" />
     <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://intrepidtechnology.com/blog-automation.html"
-    />
+    <link rel="canonical" href="https://intrepidtechnology.com/blog-rpa.html" />
     <link rel="icon" href="favicon.ico" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body
-    x-data="{ page: 'blog-automation', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-data="{ page: 'blog-rpa', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode')) || true;
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
@@ -94,10 +91,9 @@
               <li><a href="services.html" class="xl">Services</a></li>
               <li class="c i" x-data="{ dropdown: false }">
                 <a
-                  href="#"
                   class="xl tc wf yf bg"
                   @click.prevent="dropdown = !dropdown"
-                  :class="{ 'mk': page === 'blog-webdev' || page === 'blog-mobile' || page === 'blog-software' || page === 'blog-automation' || page === 'blog-consulting' }"
+                  :class="{ 'mk': page === 'blog-webdev' || page === 'blog-mobile' || page === 'blog-software' || page === 'blog-automation' || page === 'blog-consulting' || page === 'blog-rpa' }"
                 >
                   Blogs
 
@@ -149,6 +145,14 @@
                   </li>
                   <li>
                     <a
+                      href="blog-rpa.html"
+                      class="xl"
+                      :class="{ 'mk': page === 'blog-rpa' }"
+                      >RPA Automation</a
+                    >
+                  </li>
+                  <li>
+                    <a
                       href="blog-consulting.html"
                       class="xl"
                       :class="{ 'mk': page === 'blog-consulting' }"
@@ -196,7 +200,7 @@
             </div>
 
             <a
-              href="index.html#support"
+              href="contact.html"
               :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }"
               class="ek pk xl"
               >Contact Us</a
@@ -218,252 +222,304 @@
               <div class="c rc i z-1 pg mb">
                 <img
                   class="w-full"
-                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop"
-                  alt="Business Process Automation"
+                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1600&auto=format&fit=crop"
+                  alt="RPA Automation"
                 />
               </div>
 
               <div class="tc uf wf ag jq mb">
                 <div class="tc wf ag">
                   <img src="images/icon-man.svg" alt="User" />
-                  <p>Intrepid Technology Team</p>
+                  <p>Rahul Sharma</p>
                 </div>
                 <div class="tc wf ag">
                   <img src="images/icon-calender.svg" alt="Calender" />
-                  <p>22 Jan, 2024</p>
+                  <p>15 Feb, 2024</p>
                 </div>
               </div>
 
               <h1 class="fk vj zp pr kk wm qb mb">
-                Streamlining Business Operations with Intelligent Automation
+                Robotic Process Automation: The Future of Business Efficiency
               </h1>
 
               <div class="uo mb">
                 <p>
-                  In today's fast-paced business environment, automation is no
-                  longer a luxury—it's a necessity. At Intrepid Technology, we
-                  specialize in implementing intelligent automation solutions
-                  that transform how businesses operate, making them more
-                  efficient, cost-effective, and competitive.
+                  Robotic Process Automation (RPA) is revolutionizing how
+                  businesses operate by automating repetitive, rule-based tasks
+                  that were previously performed by humans. At Intrepid
+                  Technology, we specialize in implementing RPA solutions that
+                  transform business operations, reduce costs, and improve
+                  accuracy across various industries.
                 </p>
 
-                <h2>The Power of Business Process Automation</h2>
+                <h2>What is Robotic Process Automation?</h2>
                 <p>
-                  Business Process Automation (BPA) involves using technology to
-                  perform repetitive tasks and streamline workflows. This goes
-                  beyond simple task automation to include intelligent
-                  decision-making and adaptive processes.
+                  RPA uses software robots or "bots" to mimic human actions and
+                  interact with digital systems. These bots can perform
+                  repetitive tasks such as data entry, form filling, report
+                  generation, and system integration without human intervention,
+                  24 hours a day, 7 days a week.
                 </p>
 
-                <h3>Key Benefits of Automation</h3>
+                <h3>Key Features of RPA</h3>
                 <ul>
                   <li>
-                    <strong>Cost Reduction:</strong> Eliminate manual errors and
-                    reduce operational costs by up to 50%
+                    <strong>Non-Intrusive:</strong> RPA works alongside existing
+                    systems without requiring major changes to infrastructure
                   </li>
                   <li>
-                    <strong>Increased Efficiency:</strong> Complete tasks 24/7
-                    without human intervention
+                    <strong>Scalable:</strong> Easily deploy additional bots as
+                    business needs grow
                   </li>
                   <li>
-                    <strong>Improved Accuracy:</strong> Minimize human errors in
-                    repetitive processes
+                    <strong>Intelligent:</strong> Modern RPA includes AI
+                    capabilities for decision-making and learning
                   </li>
                   <li>
-                    <strong>Scalability:</strong> Handle increased workloads
-                    without proportional cost increases
+                    <strong>Cost-Effective:</strong> Reduce operational costs by
+                    up to 50%
                   </li>
                   <li>
-                    <strong>Employee Satisfaction:</strong> Free staff from
-                    mundane tasks to focus on creative work
+                    <strong>Accurate:</strong> Eliminate human errors in
+                    repetitive tasks
+                  </li>
+                  <li>
+                    <strong>Fast:</strong> Complete tasks at speeds far
+                    exceeding human capabilities
                   </li>
                 </ul>
 
-                <h2>Types of Automation Solutions</h2>
-                <p>
-                  We offer comprehensive automation solutions tailored to
-                  different business needs:
-                </p>
+                <h2>RPA Use Cases Across Industries</h2>
 
-                <h3>Robotic Process Automation (RPA)</h3>
-                <p>
-                  RPA uses software robots to mimic human actions and interact
-                  with digital systems:
-                </p>
+                <h3>Financial Services</h3>
                 <ul>
-                  <li>Data entry and processing automation</li>
-                  <li>Report generation and distribution</li>
-                  <li>Invoice processing and payment workflows</li>
-                  <li>Customer onboarding automation</li>
-                  <li>Inventory management systems</li>
+                  <li>Automated loan processing and credit scoring</li>
+                  <li>Account reconciliation and fraud detection</li>
+                  <li>Customer onboarding and KYC compliance</li>
+                  <li>Report generation and regulatory submissions</li>
                 </ul>
 
-                <h3>Workflow Automation</h3>
-                <p>
-                  Streamline complex business processes with intelligent
-                  workflows:
-                </p>
+                <h3>Healthcare</h3>
                 <ul>
-                  <li>Approval process automation</li>
-                  <li>Document routing and management</li>
-                  <li>Customer service ticket handling</li>
-                  <li>Project management workflows</li>
-                  <li>HR and recruitment processes</li>
+                  <li>Patient data processing and billing</li>
+                  <li>Insurance claims processing</li>
+                  <li>Appointment scheduling and reminders</li>
+                  <li>Medical record management</li>
                 </ul>
 
-                <h3>AI-Powered Automation</h3>
-                <p>
-                  Leverage artificial intelligence for intelligent
-                  decision-making:
-                </p>
+                <h3>Retail & E-commerce</h3>
                 <ul>
-                  <li>Intelligent document processing</li>
-                  <li>Predictive analytics and insights</li>
-                  <li>Chatbot and virtual assistant integration</li>
-                  <li>Automated customer segmentation</li>
-                  <li>Smart scheduling and resource allocation</li>
+                  <li>Order processing and inventory management</li>
+                  <li>Customer service chatbots and support</li>
+                  <li>Price monitoring and dynamic pricing</li>
+                  <li>Supply chain automation</li>
                 </ul>
 
-                <h2>Industry-Specific Automation Solutions</h2>
+                <h3>Human Resources</h3>
+                <ul>
+                  <li>Employee onboarding and offboarding</li>
+                  <li>Payroll processing and benefits administration</li>
+                  <li>Resume screening and candidate evaluation</li>
+                  <li>Compliance reporting</li>
+                </ul>
 
-                <h3>Healthcare Automation</h3>
+                <h2>RPA Implementation Process</h2>
                 <p>
-                  Streamline patient management, appointment scheduling, and
-                  medical record processing.
-                </p>
-
-                <h3>Financial Services Automation</h3>
-                <p>
-                  Automate loan processing, compliance reporting, and risk
-                  assessment workflows.
-                </p>
-
-                <h3>E-commerce Automation</h3>
-                <p>
-                  Handle order processing, inventory management, and customer
-                  communication automatically.
-                </p>
-
-                <h3>Manufacturing Automation</h3>
-                <p>
-                  Optimize production lines, quality control, and supply chain
-                  management.
-                </p>
-
-                <h2>Our Automation Implementation Process</h2>
-                <p>
-                  We follow a systematic approach to ensure successful
-                  automation implementation:
+                  Our systematic approach ensures successful RPA implementation:
                 </p>
                 <ol>
                   <li>
-                    <strong>Process Analysis:</strong> Identify bottlenecks and
-                    automation opportunities
+                    <strong>Process Assessment:</strong> Identify suitable
+                    processes for automation
+                  </li>
+                  <li>
+                    <strong>Feasibility Analysis:</strong> Evaluate technical
+                    and business requirements
                   </li>
                   <li>
                     <strong>Solution Design:</strong> Create detailed automation
-                    blueprints
+                    workflows and bot logic
                   </li>
                   <li>
-                    <strong>Development:</strong> Build and test automation
-                    solutions
+                    <strong>Development:</strong> Build and configure RPA bots
+                    using industry-leading tools
                   </li>
                   <li>
-                    <strong>Integration:</strong> Seamlessly integrate with
-                    existing systems
+                    <strong>Testing:</strong> Comprehensive testing in staging
+                    environments
                   </li>
                   <li>
-                    <strong>Testing:</strong> Comprehensive testing and quality
-                    assurance
+                    <strong>Deployment:</strong> Gradual rollout with minimal
+                    business disruption
                   </li>
                   <li>
-                    <strong>Training:</strong> User training and change
-                    management
+                    <strong>Monitoring & Optimization:</strong> Continuous
+                    performance monitoring and improvements
                   </li>
                   <li>
-                    <strong>Support:</strong> Ongoing monitoring and
-                    optimization
+                    <strong>Support & Maintenance:</strong> Ongoing support and
+                    bot updates
                   </li>
                 </ol>
 
-                <h2>Technology Stack for Automation</h2>
+                <h2>RPA Technologies We Use</h2>
+
+                <h3>UiPath</h3>
                 <p>
-                  We use industry-leading technologies to build robust
-                  automation solutions:
+                  Leading RPA platform with advanced AI capabilities, excellent
+                  user interface, and comprehensive automation features for
+                  complex business processes.
+                </p>
+
+                <h3>Automation Anywhere</h3>
+                <p>
+                  Cloud-native RPA solution with strong security features,
+                  cognitive automation, and seamless integration with existing
+                  enterprise systems.
+                </p>
+
+                <h3>Microsoft Power Automate</h3>
+                <p>
+                  User-friendly RPA tool integrated with Microsoft ecosystem,
+                  perfect for organizations already using Microsoft products.
+                </p>
+
+                <h3>Blue Prism</h3>
+                <p>
+                  Enterprise-grade RPA platform focused on scalability,
+                  security, and compliance for large organizations.
+                </p>
+
+                <h2>Benefits of RPA Implementation</h2>
+
+                <h3>Cost Savings</h3>
+                <p>
+                  RPA can reduce operational costs by 30-50% by automating
+                  repetitive tasks and allowing employees to focus on
+                  higher-value activities.
+                </p>
+
+                <h3>Improved Accuracy</h3>
+                <p>
+                  Eliminate human errors in data entry and processing, ensuring
+                  100% accuracy in automated tasks.
+                </p>
+
+                <h3>Increased Productivity</h3>
+                <p>
+                  Bots work 24/7 without breaks, processing thousands of
+                  transactions per hour compared to human limitations.
+                </p>
+
+                <h3>Faster Processing</h3>
+                <p>
+                  Complete tasks in minutes that would take humans hours or days
+                  to finish.
+                </p>
+
+                <h3>Scalability</h3>
+                <p>
+                  Easily scale automation as business grows, adding more bots
+                  without proportional cost increases.
+                </p>
+
+                <h3>Compliance & Audit Trail</h3>
+                <p>
+                  Maintain detailed logs of all automated processes for
+                  compliance and audit purposes.
+                </p>
+
+                <h2>RPA vs Traditional Automation</h2>
+
+                <h3>RPA Advantages</h3>
+                <ul>
+                  <li>Works with existing systems without major changes</li>
+                  <li>Faster implementation compared to custom development</li>
+                  <li>Easier to modify and update automation rules</li>
+                  <li>Lower technical barriers for business users</li>
+                  <li>Quick ROI and measurable business impact</li>
+                </ul>
+
+                <h3>When to Choose RPA</h3>
+                <ul>
+                  <li>Repetitive, rule-based tasks</li>
+                  <li>High-volume data processing</li>
+                  <li>Multi-system integration needs</li>
+                  <li>Processes requiring 24/7 operation</li>
+                  <li>Standardized workflows with clear rules</li>
+                </ul>
+
+                <h2>Getting Started with RPA</h2>
+                <p>
+                  Ready to transform your business with RPA? Here's how to get
+                  started:
+                </p>
+
+                <h3>Assessment Phase</h3>
+                <p>
+                  We begin with a comprehensive assessment of your current
+                  processes to identify automation opportunities and potential
+                  ROI.
+                </p>
+
+                <h3>Pilot Implementation</h3>
+                <p>
+                  Start with a small-scale pilot project to demonstrate value
+                  and build confidence before full-scale implementation.
+                </p>
+
+                <h3>Change Management</h3>
+                <p>
+                  Prepare your team for the transition with training and clear
+                  communication about the benefits and changes.
+                </p>
+
+                <h3>Continuous Improvement</h3>
+                <p>
+                  Monitor performance and continuously optimize RPA processes
+                  for maximum efficiency and effectiveness.
+                </p>
+
+                <h2>Future of RPA</h2>
+                <p>
+                  The future of RPA lies in intelligent automation that combines
+                  RPA with AI, machine learning, and cognitive capabilities:
                 </p>
                 <ul>
                   <li>
-                    <strong>RPA Tools:</strong> UiPath, Automation Anywhere,
-                    Microsoft Power Automate
+                    <strong>Hyperautomation:</strong> Combining RPA with AI for
+                    end-to-end process automation
                   </li>
                   <li>
-                    <strong>Integration Platforms:</strong> Zapier, Microsoft
-                    Flow, MuleSoft
+                    <strong>Cognitive RPA:</strong> Bots that can learn, make
+                    decisions, and handle unstructured data
                   </li>
                   <li>
-                    <strong>AI/ML Tools:</strong> TensorFlow, PyTorch, Google AI
-                    Platform
+                    <strong>Attended Automation:</strong> RPA assistants that
+                    work alongside humans
                   </li>
                   <li>
-                    <strong>Low-Code Platforms:</strong> Microsoft Power Apps,
-                    OutSystems
+                    <strong>Process Mining:</strong> AI-powered analysis of
+                    business processes for optimization
                   </li>
                   <li>
-                    <strong>Custom Development:</strong> Python, JavaScript, C#
+                    <strong>Zero-touch Automation:</strong> Fully autonomous
+                    business processes
                   </li>
                 </ul>
 
-                <h2>Measuring Automation Success</h2>
+                <h2>Why Choose Intrepid Technology for RPA</h2>
                 <p>
-                  We help you track and measure the impact of your automation
-                  initiatives:
+                  With years of experience in RPA implementation across various
+                  industries, we bring:
                 </p>
                 <ul>
-                  <li>
-                    <strong>ROI Calculation:</strong> Measure financial benefits
-                    and cost savings
-                  </li>
-                  <li>
-                    <strong>Performance Metrics:</strong> Track efficiency
-                    improvements and error reduction
-                  </li>
-                  <li>
-                    <strong>User Satisfaction:</strong> Monitor employee and
-                    customer satisfaction
-                  </li>
-                  <li>
-                    <strong>Scalability Assessment:</strong> Evaluate system
-                    performance under increased load
-                  </li>
-                </ul>
-
-                <h2>Why Choose Intrepid Technology for Automation</h2>
-                <p>
-                  With extensive experience in implementing automation solutions
-                  across various industries, we bring:
-                </p>
-                <ul>
-                  <li>
-                    Deep technical expertise in multiple automation technologies
-                  </li>
-                  <li>Industry-specific knowledge and best practices</li>
-                  <li>Proven track record of successful automation projects</li>
-                  <li>Comprehensive support from planning to implementation</li>
-                  <li>Ongoing maintenance and optimization services</li>
-                </ul>
-
-                <h2>Future of Automation</h2>
-                <p>
-                  The future of business automation lies in intelligent,
-                  adaptive systems that learn and improve over time. We're at
-                  the forefront of these developments, ensuring your business
-                  stays ahead of the curve with:
-                </p>
-                <ul>
-                  <li>Machine learning-powered process optimization</li>
-                  <li>IoT integration for smart automation</li>
-                  <li>Blockchain-based secure automation workflows</li>
-                  <li>Augmented reality for enhanced user experiences</li>
+                  <li>Certified RPA developers and architects</li>
+                  <li>Experience with all major RPA platforms</li>
+                  <li>Proven track record of successful implementations</li>
+                  <li>Comprehensive support from assessment to deployment</li>
+                  <li>Training and change management expertise</li>
+                  <li>Ongoing monitoring and optimization services</li>
                 </ul>
               </div>
             </div>
@@ -471,7 +527,7 @@
             <!-- Sidebar -->
             <div class="animate_right to/5">
               <div class="sg hh sm vk xm yh">
-                <h4 class="kk wm tj ec mb">Automation Services</h4>
+                <h4 class="kk wm tj ec mb">RPA Services</h4>
                 <ul class="tc sf">
                   <li class="tc wf ag">
                     <span class="rc je md/2 gh xg"></span>
@@ -479,31 +535,42 @@
                   </li>
                   <li class="tc wf ag">
                     <span class="rc je md/2 gh xg"></span>
-                    <span>Workflow Automation</span>
+                    <span>Bot Development</span>
                   </li>
                   <li class="tc wf ag">
                     <span class="rc je md/2 gh xg"></span>
-                    <span>AI-Powered Automation</span>
+                    <span>Process Automation</span>
                   </li>
                   <li class="tc wf ag">
                     <span class="rc je md/2 gh xg"></span>
-                    <span>Process Optimization</span>
+                    <span>RPA Consulting</span>
                   </li>
                   <li class="tc wf ag">
                     <span class="rc je md/2 gh xg"></span>
-                    <span>Integration Services</span>
+                    <span>Support & Maintenance</span>
                   </li>
                 </ul>
               </div>
 
               <div class="sg hh sm vk xm yh mt">
-                <h4 class="kk wm tj ec mb">Automation Tools</h4>
+                <h4 class="kk wm tj ec mb">RPA Tools</h4>
                 <div class="tc sf yo">
                   <span class="rc je md gh xg">UiPath</span>
-                  <span class="rc je md gh xg">Zapier</span>
-                  <span class="rc je md gh xg">Python</span>
+                  <span class="rc je md gh xg">Automation Anywhere</span>
                   <span class="rc je md gh xg">Power Automate</span>
-                  <span class="rc je md gh xg">TensorFlow</span>
+                  <span class="rc je md gh xg">Blue Prism</span>
+                  <span class="rc je md gh xg">WorkFusion</span>
+                </div>
+              </div>
+
+              <div class="sg hh sm vk xm yh mt">
+                <h4 class="kk wm tj ec mb">Industries</h4>
+                <div class="tc sf yo">
+                  <span class="rc je md gh xg">Finance</span>
+                  <span class="rc je md gh xg">Healthcare</span>
+                  <span class="rc je md gh xg">Retail</span>
+                  <span class="rc je md gh xg">Manufacturing</span>
+                  <span class="rc je md gh xg">Insurance</span>
                 </div>
               </div>
             </div>
@@ -521,20 +588,17 @@
           <div class="tc uf sn tn un gg">
             <div class="animate_left to/2">
               <h2 class="fk vj zp pr lk ac">
-                Ready to Automate Your Business?
+                Ready to Automate Your Processes?
               </h2>
               <p class="lk">
-                Discover how intelligent automation can transform your
-                operations and boost productivity. Contact Intrepid Technology
-                today.
+                Transform your business operations with Robotic Process
+                Automation. Contact Intrepid Technology today for a free RPA
+                assessment.
               </p>
             </div>
             <div class="animate_right bf">
-              <a
-                href="index.html#support"
-                class="vc ek kk hh rg ol il cm gi hi"
-              >
-                Start Automation Journey
+              <a href="contact.html" class="vc ek kk hh rg ol il cm gi hi">
+                Start RPA Journey
               </a>
             </div>
           </div>
@@ -598,7 +662,7 @@
                     >
                       <g clip-path="url(#clip0_48_1502)">
                         <path
-                          d="M22.162 5.65593C21.3985 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4803 3.89489 16.5709 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52832 8.31345 7.04328 7.56059C5.55823 6.80773 4.24812 5.75098 3.19799 4.45893C2.82628 5.09738 2.63095 5.82315 2.63199 6.56193C2.63199 8.01193 3.36999 9.29293 4.49199 10.0429C3.828 10.022 3.17862 9.84271 2.59799 9.51993V9.57193C2.59819 10.5376 2.93236 11.4735 3.54384 12.221C4.15532 12.9684 5.00647 13.4814 5.95299 13.6729C5.33661 13.84 4.6903 13.8646 4.06299 13.7449C4.32986 14.5762 4.85 15.3031 5.55058 15.824C6.25117 16.345 7.09712 16.6337 7.96999 16.6499C7.10247 17.3313 6.10917 17.8349 5.04687 18.1321C3.98458 18.4293 2.87412 18.5142 1.77899 18.3819C3.69069 19.6114 5.91609 20.2641 8.18899 20.2619C15.882 20.2619 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z"
+                          d="M22.162 5.65593C21.3985 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4803 3.89489 16.5709 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52832 8.31345 7.04328 3.56059C5.55823 3.24067 4.24812 2.27197 3.19799 4.45893C2.82628 1.67284 2.63095 2.33814 2.63199 3.01534C2.63199 4.34451 3.36999 5.51876 4.49199 6.20626C3.828 6.1871 3.17862 6.02273 2.59799 5.72685V5.77451C2.59819 6.65974 2.93236 7.51766 3.54384 8.20282C4.15532 8.88797 5.00647 9.3582 5.95299 9.53376C5.33661 9.68688 4.6903 9.70945 4.06299 9.59976C4.32986 10.3617 4.85 11.0281 5.55058 11.5056C6.25117 11.9831 7.09712 12.2478 7.96999 12.2627C7.10247 12.8872 6.10917 13.3489 5.04687 13.6213C3.98458 13.8938 2.87412 13.9716 1.77899 13.8503C3.69069 14.9773 5.91609 15.5756 8.18899 15.5737C15.882 15.5737 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z"
                           fill=""
                         />
                       </g>
@@ -646,6 +710,7 @@
                       <g clip-path="url(#clip0_48_1508)">
                         <path
                           d="M7.443 5.3501C8.082 5.3501 8.673 5.4001 9.213 5.5481C9.70301 5.63814 10.1708 5.82293 10.59 6.0921C10.984 6.3391 11.279 6.6861 11.475 7.1311C11.672 7.5761 11.77 8.1211 11.77 8.7141C11.77 9.4071 11.623 10.0001 11.279 10.4451C10.984 10.8911 10.492 11.2861 9.902 11.5831C10.738 11.8311 11.377 12.2761 11.77 12.8691C12.164 13.4631 12.41 14.2051 12.41 15.0461C12.41 15.7391 12.262 16.3321 12.016 16.8271C11.77 17.3221 11.377 17.7671 10.934 18.0641C10.4528 18.3825 9.92084 18.6165 9.361 18.7561C8.771 18.9051 8.181 19.0041 7.591 19.0041H1V5.3501H7.443ZM7.049 10.8901C7.59 10.8901 8.033 10.7421 8.377 10.4951C8.721 10.2481 8.869 9.8021 8.869 9.2581C8.869 8.9611 8.819 8.6641 8.721 8.4671C8.623 8.2691 8.475 8.1201 8.279 7.9721C8.082 7.8731 7.885 7.7741 7.639 7.7251C7.393 7.6751 7.148 7.6751 6.852 7.6751H4V10.8911H7.05L7.049 10.8901ZM7.197 16.7281C7.492 16.7281 7.787 16.6781 8.033 16.6291C8.28138 16.5819 8.51628 16.4805 8.721 16.3321C8.92139 16.1873 9.08903 16.002 9.213 15.7881C9.311 15.5411 9.41 15.2441 9.41 14.8981C9.41 14.2051 9.213 13.7101 8.82 13.3641C8.426 13.0671 7.885 12.9191 7.246 12.9191H4V16.7291H7.197V16.7281ZM16.689 16.6781C17.082 17.0741 17.672 17.2721 18.459 17.2721C19 17.2721 19.492 17.1241 19.885 16.8771C20.279 16.5801 20.525 16.2831 20.623 15.9861H23.033C22.639 17.1731 22.049 18.0141 21.263 18.5581C20.475 19.0531 19.541 19.3501 18.41 19.3501C17.6864 19.3523 16.9688 19.2179 16.295 18.9541C15.6887 18.7266 15.148 18.3529 14.721 17.8661C14.2643 17.4107 13.9267 16.8498 13.738 16.2331C13.492 15.5901 13.393 14.8981 13.393 14.1061C13.393 13.3641 13.492 12.6721 13.738 12.0281C13.9745 11.4082 14.3245 10.8378 14.77 10.3461C15.213 9.9011 15.754 9.5061 16.344 9.2581C17.0007 8.99416 17.7022 8.85969 18.41 8.8621C19.246 8.8621 19.984 9.0111 20.623 9.3571C21.263 9.7031 21.754 10.0991 22.148 10.6931C22.5499 11.2636 22.8494 11.8998 23.033 12.5731C23.131 13.2651 23.18 13.9581 23.131 14.7491H16C16 15.5411 16.295 16.2831 16.689 16.6791V16.6781ZM19.787 11.4841C19.443 11.1381 18.902 10.9401 18.262 10.9401C17.82 10.9401 17.475 11.0391 17.18 11.1871C16.885 11.3361 16.689 11.5341 16.492 11.7321C16.311 11.9234 16.1912 12.1643 16.148 12.4241C16.098 12.6721 16.049 12.8691 16.049 13.0671H20.475C20.377 12.3251 20.131 11.8311 19.787 11.4841V11.4841ZM15.459 6.2901H20.967V7.6261H15.46V6.2901H15.459Z"
+                          fill=""
                         />
                       </g>
                       <defs>
@@ -665,14 +730,12 @@
 
                 <ul>
                   <li><a href="index.html" class="sc xl vb">Home</a></li>
-                  <li>
-                    <a href="index.html#services" class="sc xl vb">Services</a>
-                  </li>
+                  <li><a href="services.html" class="sc xl vb">Services</a></li>
                   <li>
                     <a href="blog-grid.html" class="sc xl vb"> All Blogs </a>
                   </li>
                   <li>
-                    <a href="index.html#support" class="sc xl vb">Contact Us</a>
+                    <a href="contact.html" class="sc xl vb">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -700,6 +763,9 @@
                     >
                   </li>
                   <li>
+                    <a href="blog-rpa.html" class="sc xl vb">RPA Automation</a>
+                  </li>
+                  <li>
                     <a href="blog-consulting.html" class="sc xl vb"
                       >IT Consulting</a
                     >
@@ -712,18 +778,18 @@
                 <ul>
                   <li>
                     <a
-                      href="mailto:support@intrepidtechnology.com"
+                      href="mailto:technologyintrepid@gmail.com"
                       class="sc xl vb"
                       >Email Support</a
                     >
                   </li>
                   <li>
-                    <a href="tel:+918446456789" class="sc xl vb"
+                    <a href="tel:+919518746631" class="sc xl vb"
                       >Phone Support</a
                     >
                   </li>
                   <li>
-                    <a href="index.html#support" class="sc xl vb">Live Chat</a>
+                    <a href="contact.html" class="sc xl vb">Live Chat</a>
                   </li>
                   <li><a href="#" class="sc xl vb">Documentation</a></li>
                 </ul>
@@ -734,7 +800,7 @@
                 <p class="ac qe">Subscribe to receive future updates</p>
 
                 <form
-                  action="mailto:support@intrepidtechnology.com"
+                  action="mailto:technologyintrepid@gmail.com"
                   method="POST"
                   enctype="text/plain"
                 >
@@ -756,7 +822,7 @@
                       >
                         <g clip-path="url(#clip0_48_1487)">
                           <path
-                            d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
+                            d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
                             fill=""
                           />
                         </g>
