@@ -24,6 +24,21 @@
     />
     <link rel="icon" href="favicon.ico" />
     <link href="style.css" rel="stylesheet" />
+    <style>
+      /* Mobile responsive layout */
+      @media (max-width: 768px) {
+        .blog-content-container {
+          flex-direction: column !important;
+        }
+        .blog-main-content {
+          width: 100% !important;
+          margin-bottom: 2rem;
+        }
+        .blog-sidebar {
+          width: 100% !important;
+        }
+      }
+    </style>
   </head>
   <body
     x-data="{ page: 'blog-webdev', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
@@ -94,10 +109,9 @@
               <li><a href="services.html" class="xl">Services</a></li>
               <li class="c i" x-data="{ dropdown: false }">
                 <a
-                  href="#"
                   class="xl tc wf yf bg"
                   @click.prevent="dropdown = !dropdown"
-                  :class="{ 'mk': page === 'blog-webdev' || page === 'blog-mobile' || page === 'blog-software' || page === 'blog-automation' || page === 'blog-consulting' }"
+                  :class="{ 'mk': page === 'blog-webdev' || page === 'blog-mobile' || page === 'blog-software' || page === 'blog-automation' || page === 'blog-consulting' || page === 'blog-rpa' }"
                 >
                   Blogs
 
@@ -149,6 +163,14 @@
                   </li>
                   <li>
                     <a
+                      href="blog-rpa.html"
+                      class="xl"
+                      :class="{ 'mk': page === 'blog-rpa' }"
+                      >RPA Automation</a
+                    >
+                  </li>
+                  <li>
+                    <a
                       href="blog-consulting.html"
                       class="xl"
                       :class="{ 'mk': page === 'blog-consulting' }"
@@ -159,7 +181,6 @@
                 <!-- Dropdown End -->
               </li>
               <li><a href="blog-grid.html" class="xl">All Blogs</a></li>
-              <li><a href="contact.html" class="xl">Contact</a></li>
             </ul>
           </nav>
 
@@ -196,7 +217,7 @@
             </div>
 
             <a
-              href="index.html#support"
+              href="contact.html"
               :class="{ 'nk yl' : page === 'home', 'ok' : page === 'home' && stickyMenu }"
               class="ek pk xl"
               >Contact Us</a
@@ -211,18 +232,30 @@
     <main>
       <!-- ===== Blog Details Start ===== -->
       <section class="ji gp uq">
-        <div class="bb ye ki xn vq jb">
-          <div class="tc uf sn tn un gg">
-            <!-- Blog Details -->
-            <div class="animate_left nn/5 to/3">
-              <div class="c rc i z-1 pg mb">
-                <img
-                  class="w-full"
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop"
-                  alt="Web Development"
-                />
-              </div>
+        <!-- Full Width Hero Image -->
+        <div class="bb ze ki xn vq">
+          <div class="animate_left">
+            <div class="c rc i z-1 pg mb" style="width: 100%; max-width: none">
+              <img
+                class="w-full"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop"
+                alt="Web Development"
+                style="
+                  width: 100%;
+                  height: 400px;
+                  object-fit: cover;
+                  border-radius: 0;
+                "
+              />
+            </div>
+          </div>
+        </div>
 
+        <!-- Full Width Content -->
+        <div class="bb ze ki xn vq jb">
+          <div class="tc uf sn tn un gg blog-content-container">
+            <!-- Blog Details -->
+            <div class="animate_left blog-main-content" style="width: 60%">
               <div class="tc uf wf ag jq mb">
                 <div class="tc wf ag">
                   <img src="images/icon-man.svg" alt="User" />
@@ -312,7 +345,7 @@
             </div>
 
             <!-- Sidebar -->
-            <div class="animate_right to/5">
+            <div class="animate_right blog-sidebar" style="width: 30%">
               <div class="sg hh sm vk xm yh">
                 <h4 class="kk wm tj ec mb">Our Web Development Services</h4>
                 <ul class="tc sf">
@@ -341,13 +374,25 @@
 
               <div class="sg hh sm vk xm yh mt">
                 <h4 class="kk wm tj ec mb">Technologies We Use</h4>
-                <div class="tc sf yo">
-                  <span class="rc je md gh xg">React</span>
-                  <span class="rc je md gh xg">Node.js</span>
-                  <span class="rc je md gh xg">Python</span>
-                  <span class="rc je md gh xg">PHP</span>
-                  <span class="rc je md gh xg">MongoDB</span>
-                  <span class="rc je md gh xg">MySQL</span>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
+                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
+                    >React</span
+                  >
+                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
+                    >Node.js</span
+                  >
+                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
+                    >Python</span
+                  >
+                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
+                    >PHP</span
+                  >
+                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
+                    >MongoDB</span
+                  >
+                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
+                    >MySQL</span
+                  >
                 </div>
               </div>
             </div>
@@ -374,10 +419,7 @@
               </p>
             </div>
             <div class="animate_right bf">
-              <a
-                href="index.html#support"
-                class="vc ek kk hh rg ol il cm gi hi"
-              >
+              <a href="contact.html" class="vc ek kk hh rg ol il cm gi hi">
                 Get Started Now
               </a>
             </div>
@@ -516,7 +558,7 @@
                     <a href="blog-grid.html" class="sc xl vb"> All Blogs </a>
                   </li>
                   <li>
-                    <a href="index.html#support" class="sc xl vb">Contact Us</a>
+                    <a href="contact.html" class="sc xl vb">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -567,7 +609,7 @@
                     >
                   </li>
                   <li>
-                    <a href="index.html#support" class="sc xl vb">Live Chat</a>
+                    <a href="contact.html" class="sc xl vb">Live Chat</a>
                   </li>
                   <li><a href="#" class="sc xl vb">Documentation</a></li>
                 </ul>

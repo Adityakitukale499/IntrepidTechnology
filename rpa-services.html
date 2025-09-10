@@ -4,32 +4,119 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT Consulting Services | Intrepid Technology - Strategic Technology Consulting</title>
-    <meta name="description" content="Strategic IT consulting services to help businesses leverage technology for growth. Digital transformation, technology strategy, and IT infrastructure consulting." />
-    <meta name="keywords" content="IT consulting, digital transformation, technology strategy, IT infrastructure, technology consulting, business technology" />
+    <title>
+      RPA Automation Services | Robotic Process Automation Solutions - Intrepid
+      Technology
+    </title>
+    <meta
+      name="description"
+      content="Transform your business with Robotic Process Automation (RPA) services. Automate repetitive tasks, reduce costs, and improve efficiency with UiPath, Automation Anywhere, and custom RPA solutions."
+    />
+    <meta
+      name="keywords"
+      content="RPA services, Robotic Process Automation, UiPath, Automation Anywhere, business process automation, workflow automation, intelligent automation"
+    />
     <meta name="author" content="Intrepid Technology" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://intrepidtechnology.com/blog-consulting.html" />
+    <link rel="canonical" href="https://intrepidtechnology.com/rpa-services" />
     <link rel="icon" href="favicon.ico" />
     <link href="style.css" rel="stylesheet" />
     <style>
-      /* Mobile responsive layout */
-      @media (max-width: 768px) {
-        .blog-content-container {
-          flex-direction: column !important;
-        }
-        .blog-main-content {
-          width: 100% !important;
-          margin-bottom: 2rem;
-        }
-        .blog-sidebar {
-          width: 100% !important;
-        }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .rpa-hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .rpa-features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 4rem 0;
+      }
+
+      .rpa-feature-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .rpa-feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .rpa-feature-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .rpa-tools {
+        background: #f8fafc;
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .rpa-tools-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .rpa-tool {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .rpa-cta {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .rpa-cta-button {
+        background: white;
+        color: #667eea;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+      }
+
+      .rpa-cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
       }
     </style>
   </head>
   <body
-    x-data="{ page: 'blog-consulting', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-data="{ page: 'rpa-services', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode')) || true;
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
@@ -218,250 +305,329 @@
     <!-- ===== Header End ===== -->
 
     <main>
-      <!-- ===== Blog Details Start ===== -->
-      <section class="ji gp uq">
-        <!-- Full Width Hero Image -->
-        <div class="bb ze ki xn vq">
-          <div class="animate_left">
-            <div class="c rc i z-1 pg mb" style="width: 100%; max-width: none">
-              <img
-                class="w-full"
-                src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=1600&auto=format&fit=crop"
-                alt="IT Consulting Services"
+      <!-- ===== RPA Hero Start ===== -->
+      <section class="rpa-hero">
+        <div class="bb ze ki xn">
+          <div class="animate_left jn/2">
+            <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1rem">
+              RPA Automation Services
+            </h1>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9">
+              Transform your business operations with cutting-edge Robotic
+              Process Automation solutions. Automate repetitive tasks, reduce
+              costs, and boost productivity with our expert RPA services.
+            </p>
+            <div>
+              <a
+                href="contact.html"
                 style="
-                  width: 100%;
-                  height: 400px;
-                  object-fit: cover;
-                  border-radius: 0;
+                  background: white;
+                  color: #667eea;
+                  padding: 1rem 2rem;
+                  border-radius: 50px;
+                  text-decoration: none;
+                  font-weight: 600;
+                  font-size: 1.1rem;
+                  display: inline-block;
+                  transition: all 0.3s;
+                  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
                 "
-              />
-            </div>
-          </div>
-        </div>
-
-        <!-- Full Width Content -->
-        <div class="bb ze ki xn vq jb">
-          <div class="tc uf sn tn un gg blog-content-container">
-            <!-- Blog Details -->
-            <div class="animate_left blog-main-content" style="width: 60%">
-              <div class="tc uf wf ag jq mb">
-                <div class="tc wf ag">
-                  <img src="images/icon-man.svg" alt="User" />
-                  <p>Intrepid Technology Team</p>
-                </div>
-                <div class="tc wf ag">
-                  <img src="images/icon-calender.svg" alt="Calender" />
-                  <p>23 Jan, 2024</p>
-                </div>
-              </div>
-
-              <h1 class="fk vj zp pr kk wm qb mb">Strategic IT Consulting: Your Guide to Digital Transformation</h1>
-
-              <div class="uo mb">
-                <p>In today's rapidly evolving digital landscape, strategic IT consulting is crucial for businesses seeking to leverage technology for competitive advantage. At Intrepid Technology, we provide comprehensive IT consulting services that help organizations navigate digital transformation, optimize IT infrastructure, and align technology with business objectives.</p>
-
-                <h2>The Role of Strategic IT Consulting</h2>
-                <p>Strategic IT consulting goes beyond technical advice—it's about understanding your business goals and developing technology strategies that drive growth, efficiency, and innovation. Our consultants work closely with your leadership team to align IT initiatives with business objectives.</p>
-
-                <h3>Digital Transformation Strategy</h3>
-                <p>Digital transformation is about fundamentally changing how your business operates and delivers value to customers:</p>
-                <ul>
-                  <li><strong>Vision and Roadmap:</strong> Define your digital transformation goals and create a comprehensive roadmap</li>
-                  <li><strong>Change Management:</strong> Guide your organization through digital adoption and cultural change</li>
-                  <li><strong>Technology Assessment:</strong> Evaluate current systems and identify modernization opportunities</li>
-                  <li><strong>ROI Measurement:</strong> Establish metrics to measure the success of digital initiatives</li>
-                </ul>
-
-                <h3>IT Infrastructure Consulting</h3>
-                <p>Modern, scalable infrastructure is the foundation of digital success:</p>
-                <ul>
-                  <li><strong>Cloud Migration:</strong> Plan and execute cloud adoption strategies (AWS, Azure, GCP)</li>
-                  <li><strong>Network Architecture:</strong> Design secure, high-performance network solutions</li>
-                  <li><strong>Data Center Optimization:</strong> Modernize legacy data centers and infrastructure</li>
-                  <li><strong>Disaster Recovery:</strong> Develop comprehensive business continuity plans</li>
-                  <li><strong>Security Assessment:</strong> Identify vulnerabilities and implement security best practices</li>
-                </ul>
-
-                <h2>Technology Strategy Development</h2>
-                <p>We help you develop technology strategies that support long-term business growth:</p>
-
-                <h3>Application Portfolio Analysis</h3>
-                <p>Evaluate your existing applications and determine the best path forward:</p>
-                <ul>
-                  <li>Application rationalization and optimization</li>
-                  <li>Legacy system modernization</li>
-                  <li>API strategy and microservices adoption</li>
-                  <li>Integration platform evaluation</li>
-                </ul>
-
-                <h3>Emerging Technology Assessment</h3>
-                <p>Stay ahead of the curve with emerging technologies:</p>
-                <ul>
-                  <li>Artificial Intelligence and Machine Learning</li>
-                  <li>Internet of Things (IoT) solutions</li>
-                  <li>Blockchain and distributed ledger technology</li>
-                  <li>Edge computing and 5G applications</li>
-                  <li>Augmented and Virtual Reality</li>
-                </ul>
-
-                <h2>Industry-Specific Consulting</h2>
-
-                <h3>Healthcare IT Consulting</h3>
-                <p>Navigate complex healthcare regulations while modernizing patient care:</p>
-                <ul>
-                  <li>HIPAA compliance and data security</li>
-                  <li>Electronic Health Records (EHR) systems</li>
-                  <li>Telemedicine platform implementation</li>
-                  <li>Healthcare analytics and reporting</li>
-                </ul>
-
-                <h3>Financial Services Consulting</h3>
-                <p>Ensure regulatory compliance while driving digital innovation:</p>
-                <ul>
-                  <li>Regulatory compliance (SOX, GDPR, etc.)</li>
-                  <li>Fintech integration and digital banking</li>
-                  <li>Risk management systems</li>
-                  <li>Payment processing optimization</li>
-                </ul>
-
-                <h3>Manufacturing Consulting</h3>
-                <p>Implement Industry 4.0 solutions for smart manufacturing:</p>
-                <ul>
-                  <li>IoT-enabled manufacturing systems</li>
-                  <li>Predictive maintenance solutions</li>
-                  <li>Supply chain optimization</li>
-                  <li>Quality control automation</li>
-                </ul>
-
-                <h2>Our Consulting Methodology</h2>
-                <p>We follow a proven, structured approach to ensure successful outcomes:</p>
-                <ol>
-                  <li><strong>Discovery and Assessment:</strong> Understand your current state and business objectives</li>
-                  <li><strong>Strategy Development:</strong> Create comprehensive technology and digital strategies</li>
-                  <li><strong>Solution Design:</strong> Develop detailed implementation plans and architecture</li>
-                  <li><strong>Implementation Planning:</strong> Create phased rollout plans with minimal disruption</li>
-                  <li><strong>Change Management:</strong> Support organizational change and user adoption</li>
-                  <li><strong>Monitoring and Optimization:</strong> Track success metrics and optimize continuously</li>
-                </ol>
-
-                <h2>Vendor Selection and Management</h2>
-                <p>We help you make informed decisions about technology vendors:</p>
-                <ul>
-                  <li><strong>RFP Development:</strong> Create comprehensive requirements documents</li>
-                  <li><strong>Vendor Evaluation:</strong> Assess vendor capabilities, pricing, and support</li>
-                  <li><strong>Contract Negotiation:</strong> Ensure favorable terms and service level agreements</li>
-                  <li><strong>Vendor Management:</strong> Monitor vendor performance and relationship management</li>
-                </ul>
-
-                <h2>Cost Optimization and ROI</h2>
-                <p>Maximize your technology investment through strategic cost management:</p>
-                <ul>
-                  <li><strong>IT Budget Optimization:</strong> Identify cost-saving opportunities</li>
-                  <li><strong>License Management:</strong> Optimize software licensing costs</li>
-                  <li><strong>Cloud Cost Optimization:</strong> Right-size cloud resources and reduce waste</li>
-                  <li><strong>ROI Analysis:</strong> Measure and demonstrate technology investment returns</li>
-                </ul>
-
-                <h2>Why Choose Intrepid Technology for IT Consulting</h2>
-                <p>Our consulting team brings deep industry knowledge and technical expertise:</p>
-                <ul>
-                  <li>Certified consultants with industry-recognized credentials</li>
-                  <li>Proven track record across multiple industries</li>
-                  <li>Strategic thinking combined with technical expertise</li>
-                  <li>Long-term partnership approach</li>
-                  <li>Focus on measurable business outcomes</li>
-                </ul>
-
-                <h2>Future-Proofing Your Technology Strategy</h2>
-                <p>We help you prepare for the future by:</p>
-                <ul>
-                  <li>Identifying emerging technology trends</li>
-                  <li>Developing flexible, scalable architectures</li>
-                  <li>Creating innovation roadmaps</li>
-                  <li>Building digital capabilities within your organization</li>
-                  <li>Establishing governance frameworks for technology decisions</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Sidebar -->
-            <div class="animate_right blog-sidebar" style="width: 30%">
-              <div class="sg hh sm vk xm yh">
-                <h4 class="kk wm tj ec mb">IT Consulting Services</h4>
-                <ul class="tc sf">
-                  <li class="tc wf ag">
-                    <span class="rc je md/2 gh xg"></span>
-                    <span>Digital Transformation</span>
-                  </li>
-                  <li class="tc wf ag">
-                    <span class="rc je md/2 gh xg"></span>
-                    <span>IT Strategy</span>
-                  </li>
-                  <li class="tc wf ag">
-                    <span class="rc je md/2 gh xg"></span>
-                    <span>Infrastructure Consulting</span>
-                  </li>
-                  <li class="tc wf ag">
-                    <span class="rc je md/2 gh xg"></span>
-                    <span>Technology Assessment</span>
-                  </li>
-                  <li class="tc wf ag">
-                    <span class="rc je md/2 gh xg"></span>
-                    <span>Vendor Management</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="sg hh sm vk xm yh mt">
-                <h4 class="kk wm tj ec mb">Consulting Expertise</h4>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem">
-                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
-                    >Cloud Strategy</span
-                  >
-                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
-                    >Cybersecurity</span
-                  >
-                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
-                    >Data Analytics</span
-                  >
-                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
-                    >Digital Innovation</span
-                  >
-                  <span class="rc je md gh xg" style="margin-bottom: 0.5rem"
-                    >IT Governance</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Blog Details End ===== -->
-
-      <!-- ===== CTA Start ===== -->
-      <section class="i pg gh ji">
-        <!-- Bg Shape -->
-        <img class="h p q" src="images/shape-16.svg" alt="Bg Shape" />
-
-        <div class="bb ye i z-10 ki xn dr">
-          <div class="tc uf sn tn un gg">
-            <div class="animate_left to/2">
-              <h2 class="fk vj zp pr lk ac">
-                Ready for Digital Transformation?
-              </h2>
-              <p class="lk">
-                Partner with Intrepid Technology for strategic IT consulting that drives real business results. Let's transform your technology landscape together.
-              </p>
-            </div>
-            <div class="animate_right bf">
-              <a href="contact.html" class="vc ek kk hh rg ol il cm gi hi">
-                Start Consulting Today
+                onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(255, 255, 255, 0.3)'"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(255, 255, 255, 0.2)'"
+              >
+                Get Started Today
               </a>
             </div>
           </div>
         </div>
       </section>
-      <!-- ===== CTA End ===== -->
+      <!-- ===== RPA Hero End ===== -->
+
+      <!-- ===== RPA Features Start ===== -->
+      <section style="padding: 4rem 0">
+        <div class="bb ze ki xn">
+          <div class="tc _o">
+            <h2
+              style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                color: #1a1a1a;
+              "
+            >
+              Why Choose Our RPA Services?
+            </h2>
+            <p style="font-size: 1.125rem; color: #6b7280; margin-bottom: 3rem">
+              Discover the benefits of implementing Robotic Process Automation
+              in your organization
+            </p>
+
+            <div class="rpa-features">
+              <div class="rpa-feature-card">
+                <div class="rpa-feature-icon">⚡</div>
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  Intelligent Automation
+                </h3>
+                <p style="color: #6b7280; line-height: 1.6">
+                  Advanced RPA solutions that automate complex business
+                  processes with AI-powered decision making and learning
+                  capabilities.
+                </p>
+              </div>
+
+              <div class="rpa-feature-card">
+                <div class="rpa-feature-icon">💰</div>
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  Cost Reduction
+                </h3>
+                <p style="color: #6b7280; line-height: 1.6">
+                  Reduce operational costs by up to 60% through automated
+                  workflows and elimination of manual repetitive tasks.
+                </p>
+              </div>
+
+              <div class="rpa-feature-card">
+                <div class="rpa-feature-icon">📈</div>
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  Scalable Solutions
+                </h3>
+                <p style="color: #6b7280; line-height: 1.6">
+                  Deploy and scale RPA bots across your organization with
+                  enterprise-grade security and compliance features.
+                </p>
+              </div>
+
+              <div class="rpa-feature-card">
+                <div class="rpa-feature-icon">🎯</div>
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  Accuracy & Speed
+                </h3>
+                <p style="color: #6b7280; line-height: 1.6">
+                  Eliminate human errors and complete tasks at speeds far
+                  exceeding human capabilities, 24/7.
+                </p>
+              </div>
+
+              <div class="rpa-feature-card">
+                <div class="rpa-feature-icon">🔒</div>
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  Enterprise Security
+                </h3>
+                <p style="color: #6b7280; line-height: 1.6">
+                  Bank-level encryption and security measures to protect your
+                  sensitive business data and processes.
+                </p>
+              </div>
+
+              <div class="rpa-feature-card">
+                <div class="rpa-feature-icon">📊</div>
+                <h3
+                  style="
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  Analytics & Insights
+                </h3>
+                <p style="color: #6b7280; line-height: 1.6">
+                  Comprehensive reporting and analytics to track RPA performance
+                  and measure business impact.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== RPA Features End ===== -->
+
+      <!-- ===== RPA Tools Start ===== -->
+      <section class="rpa-tools">
+        <div class="bb ze ki xn">
+          <div class="tc _o">
+            <h2
+              style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                color: #1a1a1a;
+              "
+            >
+              RPA Technologies We Use
+            </h2>
+            <p style="font-size: 1.125rem; color: #6b7280; margin-bottom: 3rem">
+              We leverage industry-leading RPA platforms to deliver optimal
+              automation solutions
+            </p>
+
+            <div class="rpa-tools-grid">
+              <div class="rpa-tool">
+                <img
+                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=150&auto=format&fit=crop"
+                  alt="UiPath"
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 8px;
+                    margin-bottom: 1rem;
+                  "
+                />
+                <h3
+                  style="
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  UiPath
+                </h3>
+                <p style="color: #6b7280; font-size: 0.875rem">
+                  Leading RPA platform with advanced AI capabilities and
+                  intuitive interface for complex automation workflows.
+                </p>
+              </div>
+
+              <div class="rpa-tool">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=150&fit=crop&crop=center"
+                  alt="Automation Anywhere"
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 8px;
+                    margin-bottom: 1rem;
+                  "
+                />
+                <h3
+                  style="
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  Automation Anywhere
+                </h3>
+                <p style="color: #6b7280; font-size: 0.875rem">
+                  Cloud-native RPA solution with cognitive automation and
+                  seamless integration capabilities.
+                </p>
+              </div>
+
+              <div class="rpa-tool">
+                <img
+                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=150&h=150&fit=crop&crop=center"
+                  alt="Microsoft Power Automate"
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 8px;
+                    margin-bottom: 1rem;
+                  "
+                />
+                <h3
+                  style="
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  Power Automate
+                </h3>
+                <p style="color: #6b7280; font-size: 0.875rem">
+                  User-friendly RPA tool integrated with Microsoft ecosystem,
+                  perfect for Office 365 automation.
+                </p>
+              </div>
+
+              <div class="rpa-tool">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=150&fit=crop&crop=center"
+                  alt="Blue Prism"
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 8px;
+                    margin-bottom: 1rem;
+                  "
+                />
+                <h3
+                  style="
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                    color: #1a1a1a;
+                  "
+                >
+                  Blue Prism
+                </h3>
+                <p style="color: #6b7280; font-size: 0.875rem">
+                  Enterprise-grade RPA platform focused on scalability,
+                  security, and compliance for large organizations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== RPA Tools End ===== -->
+
+      <!-- ===== RPA CTA Start ===== -->
+      <section class="rpa-cta">
+        <div class="bb ze ki xn">
+          <div class="tc _o">
+            <h2
+              style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem"
+            >
+              Ready to Automate Your Business?
+            </h2>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9">
+              Transform your operations with intelligent RPA solutions. Contact
+              our experts today for a free consultation.
+            </p>
+            <button class="rpa-cta-button">Start Your RPA Journey</button>
+          </div>
+        </div>
+      </section>
+      <!-- ===== RPA CTA End ===== -->
     </main>
 
     <!-- ===== Footer Start ===== -->
@@ -477,7 +643,9 @@
               </a>
 
               <p class="lc fb">
-                Transforming ideas into digital reality with expert technology solutions. We specialize in website development, software building, mobile applications, and IT services.
+                Transforming ideas into digital reality with expert technology
+                solutions. We specialize in website development, software
+                building, mobile applications, and RPA automation services.
               </p>
 
               <ul class="tc wf cg">
@@ -517,7 +685,7 @@
                     >
                       <g clip-path="url(#clip0_48_1502)">
                         <path
-                          d="M22.162 5.65593C21.3985 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4803 3.89489 16.5709 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52832 8.31345 7.04328 7.56059C5.55823 6.80773 4.24812 5.75098 3.19799 4.45893C2.82628 5.09738 2.63095 5.82315 2.63199 6.56193C2.63199 8.01193 3.36999 9.29293 4.49199 10.0429C3.828 10.022 3.17862 9.84271 2.59799 9.51993V9.57193C2.59819 10.5376 2.93236 11.4735 3.54384 12.221C4.15532 12.9684 5.00647 13.4814 5.95299 13.6729C5.33661 13.84 4.6903 13.8646 4.06299 13.7449C4.32986 14.5762 4.85 15.3031 5.55058 15.824C6.25117 16.345 7.09712 16.6337 7.96999 16.6499C7.10247 17.3313 6.10917 17.8349 5.04687 18.1321C3.98458 18.4293 2.87412 18.5142 1.77899 18.3819C3.69069 19.6114 5.91609 20.2641 8.18899 20.2619C15.882 20.2619 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z"
+                          d="M22.162 5.65593C21.3985 5.99362 20.589 6.2154 19.76 6.31393C20.6337 5.79136 21.2877 4.96894 21.6 3.99993C20.78 4.48793 19.881 4.82993 18.944 5.01493C18.3146 4.34151 17.4803 3.89489 16.5709 3.74451C15.6615 3.59413 14.7279 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0771 6.14972C11.6978 6.98983 11.6067 7.93171 11.818 8.82893C10.1551 8.74558 8.52832 8.31345 7.04328 3.56059C5.55823 3.24067 4.24812 5.75098 3.19799 4.45893C2.82628 1.67284 2.63095 2.33814 2.63199 3.01534C2.63199 4.34451 3.36999 5.51876 4.49199 6.20626C3.828 6.1871 3.17862 6.02273 2.59799 5.72685V5.77451C2.59819 6.65974 2.93236 7.51766 3.54384 12.221C4.15532 12.9684 5.00647 13.4814 5.95299 13.6729C5.33661 13.84 4.6903 13.8646 4.06299 13.7449C4.32986 14.5762 4.85 15.3031 5.55058 15.824C6.25117 16.345 7.09712 16.6337 7.96999 16.6499C7.10247 17.3313 6.10917 17.8349 5.04687 18.1321C3.98458 18.4293 2.87412 18.5142 1.77899 18.3819C3.69069 19.6114 5.91609 20.2641 8.18899 20.2619C15.882 20.2619 20.089 13.8889 20.089 8.36193C20.089 8.18193 20.084 7.99993 20.076 7.82193C20.8949 7.2301 21.6016 6.49695 22.163 5.65693L22.162 5.65593Z"
                           fill=""
                         />
                       </g>
@@ -565,6 +733,7 @@
                       <g clip-path="url(#clip0_48_1508)">
                         <path
                           d="M7.443 5.3501C8.082 5.3501 8.673 5.4001 9.213 5.5481C9.70301 5.63814 10.1708 5.82293 10.59 6.0921C10.984 6.3391 11.279 6.6861 11.475 7.1311C11.672 7.5761 11.77 8.1211 11.77 8.7141C11.77 9.4071 11.623 10.0001 11.279 10.4451C10.984 10.8911 10.492 11.2861 9.902 11.5831C10.738 11.8311 11.377 12.2761 11.77 12.8691C12.164 13.4631 12.41 14.2051 12.41 15.0461C12.41 15.7391 12.262 16.3321 12.016 16.8271C11.77 17.3221 11.377 17.7671 10.934 18.0641C10.4528 18.3825 9.92084 18.6165 9.361 18.7561C8.771 18.9051 8.181 19.0041 7.591 19.0041H1V5.3501H7.443ZM7.049 10.8901C7.59 10.8901 8.033 10.7421 8.377 10.4951C8.721 10.2481 8.869 9.8021 8.869 9.2581C8.869 8.9611 8.819 8.6641 8.721 8.4671C8.623 8.2691 8.475 8.1201 8.279 7.9721C8.082 7.8731 7.885 7.7741 7.639 7.7251C7.393 7.6751 7.148 7.6751 6.852 7.6751H4V10.8911H7.05L7.049 10.8901ZM7.197 16.7281C7.492 16.7281 7.787 16.6781 8.033 16.6291C8.28138 16.5819 8.51628 16.4805 8.721 16.3321C8.92139 16.1873 9.08903 16.002 9.213 15.7881C9.311 15.5411 9.41 15.2441 9.41 14.8981C9.41 14.2051 9.213 13.7101 8.82 13.3641C8.426 13.0671 7.885 12.9191 7.246 12.9191H4V16.7291H7.197V16.7281ZM16.689 16.6781C17.082 17.0741 17.672 17.2721 18.459 17.2721C19 17.2721 19.492 17.1241 19.885 16.8771C20.279 16.5801 20.525 16.2831 20.623 15.9861H23.033C22.639 17.1731 22.049 18.0141 21.263 18.5581C20.475 19.0531 19.541 19.3501 18.41 19.3501C17.6864 19.3523 16.9688 19.2179 16.295 18.9541C15.6887 18.7266 15.148 18.3529 14.721 17.8661C14.2643 17.4107 13.9267 16.8498 13.738 16.2331C13.492 15.5901 13.393 14.8981 13.393 14.1061C13.393 13.3641 13.492 12.6721 13.738 12.0281C13.9745 11.4082 14.3245 10.8378 14.77 10.3461C15.213 9.9011 15.754 9.5061 16.344 9.2581C17.0007 8.99416 17.7022 8.85969 18.41 8.8621C19.246 8.8621 19.984 9.0111 20.623 9.3571C21.263 9.7031 21.754 10.0991 22.148 10.6931C22.5499 11.2636 22.8494 11.8998 23.033 12.5731C23.131 13.2651 23.18 13.9581 23.131 14.7491H16C16 15.5411 16.295 16.2831 16.689 16.6791V16.6781ZM19.787 11.4841C19.443 11.1381 18.902 10.9401 18.262 10.9401C17.82 10.9401 17.475 11.0391 17.18 11.1871C16.885 11.3361 16.689 11.5341 16.492 11.7321C16.311 11.9234 16.1912 12.1643 16.148 12.4241C16.098 12.6721 16.049 12.8691 16.049 13.0671H20.475C20.377 12.3251 20.131 11.8311 19.787 11.4841V11.4841ZM15.459 6.2901H20.967V7.6261H15.46V6.2901H15.459Z"
+                          fill=""
                         />
                       </g>
                       <defs>
@@ -584,13 +753,13 @@
 
                 <ul>
                   <li><a href="index.html" class="sc xl vb">Home</a></li>
-                  <li><a href="index.html#services" class="sc xl vb">Services</a></li>
+                  <li><a href="services.html" class="sc xl vb">Services</a></li>
                   <li>
-                    <a href="blog-grid.html" class="sc xl vb">
-                      All Blogs
-                    </a>
+                    <a href="blog-grid.html" class="sc xl vb"> All Blogs </a>
                   </li>
-                  <li><a href="contact.html" class="sc xl vb">Contact Us</a></li>
+                  <li>
+                    <a href="contact.html" class="sc xl vb">Contact Us</a>
+                  </li>
                 </ul>
               </div>
 
@@ -598,20 +767,53 @@
                 <h4 class="kk wm tj ec">Services</h4>
 
                 <ul>
-                  <li><a href="blog-webdev.html" class="sc xl vb">Web Development</a></li>
-                  <li><a href="blog-mobile.html" class="sc xl vb">Mobile Apps</a></li>
-                  <li><a href="blog-software.html" class="sc xl vb">Software Solutions</a></li>
-                  <li><a href="blog-automation.html" class="sc xl vb">Automation</a></li>
-                  <li><a href="blog-consulting.html" class="sc xl vb">IT Consulting</a></li>
+                  <li>
+                    <a href="blog-webdev.html" class="sc xl vb"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog-mobile.html" class="sc xl vb">Mobile Apps</a>
+                  </li>
+                  <li>
+                    <a href="blog-software.html" class="sc xl vb"
+                      >Software Solutions</a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog-automation.html" class="sc xl vb"
+                      >Automation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog-rpa.html" class="sc xl vb">RPA Automation</a>
+                  </li>
+                  <li>
+                    <a href="blog-consulting.html" class="sc xl vb"
+                      >IT Consulting</a
+                    >
+                  </li>
                 </ul>
               </div>
 
               <div class="animate_top">
                 <h4 class="kk wm tj ec">Support</h4>
                 <ul>
-                  <li><a href="mailto:technologyintrepid@gmail.com" class="sc xl vb">Email Support</a></li>
-                  <li><a href="tel:+919518746631" class="sc xl vb">Phone Support</a></li>
-                  <li><a href="contact.html" class="sc xl vb">Live Chat</a></li>
+                  <li>
+                    <a
+                      href="mailto:technologyintrepid@gmail.com"
+                      class="sc xl vb"
+                      >Email Support</a
+                    >
+                  </li>
+                  <li>
+                    <a href="tel:+919518746631" class="sc xl vb"
+                      >Phone Support</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contact.html" class="sc xl vb">Live Chat</a>
+                  </li>
                   <li><a href="#" class="sc xl vb">Documentation</a></li>
                 </ul>
               </div>
@@ -650,12 +852,13 @@
                         <defs>
                           <clipPath id="clip0_48_1487">
                             <rect width="20" height="20" fill="white" />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                  </button>
-                </div>
-              </form>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -704,4 +907,3 @@
     <script defer src="bundle.js"></script>
   </body>
 </html>
-
