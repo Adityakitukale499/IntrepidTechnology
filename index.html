@@ -151,14 +151,6 @@
                   </li>
                   <li>
                     <a
-                      href="blog-automation.html"
-                      class="xl"
-                      :class="{ 'mk': page === 'blog-automation' }"
-                      >Automation</a
-                    >
-                  </li>
-                  <li>
-                    <a
                       href="blog-rpa.html"
                       class="xl"
                       :class="{ 'mk': page === 'blog-rpa' }"
@@ -270,7 +262,7 @@
                 <a
                   href="contact.html"
                   class="ek jk lk gh gi hi rg ml il vc _d _l"
-                  >Get Started Now</a
+                  >Get Inquiry</a
                 >
 
                 <span class="tc sf">
@@ -530,315 +522,6 @@
         </div>
       </section>
       <!-- ===== Services End ===== -->
-
-      <!-- ===== Projects Start ===== -->
-      <section class="pg pj vp mr oj wp nr">
-        <!-- Section Title Start -->
-        <div
-          x-data="{ sectionTitle: `Our Technology Projects Showcase`, sectionTitleText: `Explore our portfolio of successful technology projects spanning web development, mobile applications, software solutions, and digital transformation initiatives.`}"
-        >
-          <div class="animate_top bb ze rj ki xn vq">
-            <h2
-              x-text="sectionTitle"
-              class="fk vj pr kk wm on/5 gq/2 bb _b"
-            ></h2>
-            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
-          </div>
-        </div>
-        <!-- Section Title End -->
-
-        <div class="bb ze ki xn 2xl:ud-px-0 jb" x-data="{filterTab: 1}">
-          <!-- Porject Tab -->
-          <div
-            class="projects-tab _e bb tc uf wf xf cg rg hh rm vk xm si ti fc"
-          >
-            <button
-              data-filter="*"
-              @click="filterTab = 1"
-              :class="{ 'gh lk' : filterTab === 1 }"
-              class="project-tab-btn ek rg ml il vi mi"
-            >
-              All
-            </button>
-            <button
-              data-filter=".webdev"
-              @click="filterTab = 2"
-              :class="{ 'gh lk' : filterTab === 2 }"
-              class="project-tab-btn ek rg ml il vi mi"
-            >
-              Web Development
-            </button>
-            <button
-              data-filter=".mobile"
-              @click="filterTab = 3"
-              :class="{ 'gh lk' : filterTab === 3 }"
-              class="project-tab-btn ek rg ml il vi mi"
-            >
-              Mobile Apps
-            </button>
-            <button
-              data-filter=".software"
-              @click="filterTab = 4"
-              :class="{ 'gh lk' : filterTab === 4 }"
-              class="project-tab-btn ek rg ml il vi mi"
-            >
-              Software Solutions
-            </button>
-            <button
-              data-filter=".rpa"
-              @click="filterTab = 5"
-              :class="{ 'gh lk' : filterTab === 5 }"
-              class="project-tab-btn ek rg ml il vi mi"
-            >
-              RPA Automation
-            </button>
-          </div>
-
-          <!-- Projects item wrapper -->
-          <div class="projects-wrapper tc -ud-mx-5">
-            <div class="project-sizer"></div>
-            <!-- Project Item -->
-            <div class="project-item wi fb vd jn/2 to/3 webdev software">
-              <div class="c i pg sg z-1">
-                <img
-                  src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?q=80&w=1600&auto=format&fit=crop"
-                  alt="Shopify E‑commerce"
-                />
-
-                <div
-                  class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
-                >
-                  <h4 class="ek tj kk hc">Shopify Storefront</h4>
-                  <p>Custom Web Development</p>
-                  <a
-                    class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="blog-webdev.html#shopify"
-                  >
-                    <svg
-                      class="th lm ml il"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Item -->
-            <div class="project-item wi fb vd jn/2 to/3 mobile webdev">
-              <div class="c i pg sg z-1">
-                <img
-                  src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1600&auto=format&fit=crop"
-                  alt="Mobile App"
-                />
-
-                <div
-                  class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
-                >
-                  <h4 class="ek tj kk hc">On‑Demand Mobile App</h4>
-                  <p>iOS & Android</p>
-                  <a
-                    class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="blog-mobile.html"
-                  >
-                    <svg
-                      class="th lm ml il"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Item -->
-            <div class="project-item wi fb vd jn/2 to/3 software mobile">
-              <div class="c i pg sg z-1">
-                <img
-                  src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1600&auto=format&fit=crop"
-                  alt="Admin Dashboard"
-                />
-
-                <div
-                  class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
-                >
-                  <h4 class="ek tj kk hc">Admin Dashboard</h4>
-                  <p>Custom Software</p>
-                  <a
-                    class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="blog-software.html"
-                  >
-                    <svg
-                      class="th lm ml il"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Item -->
-            <div class="project-item wi fb vd vo/3 webdev mobile">
-              <div class="c i pg sg z-1">
-                <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop"
-                  alt="WordPress Site"
-                />
-
-                <div
-                  class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
-                >
-                  <h4 class="ek tj kk hc">WordPress Website</h4>
-                  <p>CMS Development</p>
-                  <a
-                    class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="blog-webdev.html#wordpress"
-                  >
-                    <svg
-                      class="th lm ml il"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- RPA Automation Project Items -->
-            <!-- Project Item -->
-            <div class="project-item wi fb vd jn/2 to/3 rpa software">
-              <div class="c i pg sg z-1">
-                <img
-                  src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1600&auto=format&fit=crop"
-                  alt="Invoice Processing RPA"
-                />
-
-                <div
-                  class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
-                >
-                  <h4 class="ek tj kk hc">Invoice Processing Bot</h4>
-                  <p>RPA Automation</p>
-                  <a
-                    class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="blog-rpa.html"
-                  >
-                    <svg
-                      class="th lm ml il"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Item -->
-            <div class="project-item wi fb vd jn/2 to/3 rpa webdev">
-              <div class="c i pg sg z-1">
-                <img
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center"
-                  alt="Data Entry Automation"
-                />
-
-                <div
-                  class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
-                >
-                  <h4 class="ek tj kk hc">Data Entry Automation</h4>
-                  <p>Smart RPA Solution</p>
-                  <a
-                    class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="blog-rpa.html"
-                  >
-                    <svg
-                      class="th lm ml il"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project Item -->
-            <div class="project-item wi fb vd jn/2 to/3 rpa mobile">
-              <div class="c i pg sg z-1">
-                <img
-                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop&crop=center"
-                  alt="Customer Service RPA"
-                />
-
-                <div
-                  class="h s r df nl kl im tc sf wf xf vd yc sg al hh/20 z-10"
-                >
-                  <h4 class="ek tj kk hc">Customer Service Bot</h4>
-                  <p>Automated Support System</p>
-                  <a
-                    class="c tc wf xf ie ld rg _g dh ml il ph jm km jc"
-                    href="blog-rpa.html"
-                  >
-                    <svg
-                      class="th lm ml il"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.4763 6.16664L6.00634 1.69664L7.18467 0.518311L13.6663 6.99998L7.18467 13.4816L6.00634 12.3033L10.4763 7.83331H0.333008V6.16664H10.4763Z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Projects End ===== -->
 
       <!-- ===== Counter Start ===== -->
       <section class="i pg qh rm ji hp">
@@ -1226,7 +909,7 @@
             </div>
             <div class="animate_right bf">
               <a href="contact.html" class="vc ek kk hh rg ol il cm gi hi">
-                Get Started Now
+                Get Inquiry
               </a>
             </div>
           </div>
@@ -1385,11 +1068,7 @@
                       >Software Solutions</a
                     >
                   </li>
-                  <li>
-                    <a href="blog-automation.html" class="sc xl vb"
-                      >Automation</a
-                    >
-                  </li>
+
                   <li>
                     <a href="blog-consulting.html" class="sc xl vb"
                       >IT Consulting</a
