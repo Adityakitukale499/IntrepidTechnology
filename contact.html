@@ -28,7 +28,8 @@
     />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://intrepidtechnology.com/contact" />
-    <link rel="icon" href="favicon.ico" />
+
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <link href="style.css" rel="stylesheet" />
     <style>
       ::-webkit-scrollbar {
@@ -102,7 +103,23 @@
                   >Home</a
                 >
               </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="xl"
+                  :class="{ 'mk': page === 'products' }"
+                  >Products</a
+                >
+              </li>
               <li><a href="services.html" class="xl">Services</a></li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="xl"
+                  :class="{ 'mk': page === 'careers' }"
+                  >Careers</a
+                >
+              </li>
               <li class="c i" x-data="{ dropdown: false }">
                 <a
                   class="xl tc wf yf bg"
@@ -168,7 +185,6 @@
                 </ul>
                 <!-- Dropdown End -->
               </li>
-              <li><a href="blog-grid.html" class="xl">All Blogs</a></li>
             </ul>
           </nav>
 
@@ -682,13 +698,29 @@
                 <h4 class="kk wm tj ec">Support</h4>
 
                 <ul>
-                  <li><a href="index.html" class="sc xl vb">Company</a></li>
-                  <li><a href="#" class="sc xl vb">Press media</a></li>
+                  <li><a href="about-us.html" class="sc xl vb">About Us</a></li>
+                  <li><a href="support.html" class="sc xl vb">Support</a></li>
                   <li>
                     <a href="blog-grid.html" class="sc xl vb">Our Blog</a>
                   </li>
                   <li>
                     <a href="contact.html" class="sc xl vb">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="animate_top">
+                <h4 class="kk wm tj ec">Legal</h4>
+                <ul>
+                  <li>
+                    <a href="privacy-policy.html" class="sc xl vb"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="terms-of-service.html" class="sc xl vb"
+                      >Terms of Service</a
+                    >
                   </li>
                 </ul>
               </div>

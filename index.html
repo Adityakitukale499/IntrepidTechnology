@@ -28,7 +28,7 @@
     />
     <meta property="og:type" content="website" />
     <link rel="canonical" href="https://intrepidtechnology.com" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <link href="style.css" rel="stylesheet" />
     <style>
       ::-webkit-scrollbar {
@@ -102,7 +102,23 @@
                   >Home</a
                 >
               </li>
+              <li>
+                <a
+                  href="products.html"
+                  class="xl"
+                  :class="{ 'mk': page === 'products' }"
+                  >Products</a
+                >
+              </li>
               <li><a href="services.html" class="xl">Services</a></li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="xl"
+                  :class="{ 'mk': page === 'careers' }"
+                  >Careers</a
+                >
+              </li>
               <li class="c i" x-data="{ dropdown: false }">
                 <a
                   class="xl tc wf yf bg"
@@ -168,8 +184,6 @@
                 </ul>
                 <!-- Dropdown End -->
               </li>
-              <li><a href="blog-grid.html" class="xl">All Blogs</a></li>
-              <!-- <li><a href="contact.html" class="xl">Contact</a></li> -->
             </ul>
           </nav>
 
@@ -264,6 +278,20 @@
                   class="ek jk lk gh gi hi rg ml il vc _d _l"
                   >Get Inquiry</a
                 >
+                <a
+                  href="https://forms.gle/your-internship-form-id"
+                  target="_blank"
+                  class="ek jk lk gh gi hi rg ml il vc _d _l"
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #667eea 0%,
+                      #764ba2 100%
+                    );
+                    margin-left: 12px;
+                  "
+                  >Apply Internship</a
+                >
 
                 <span class="tc sf">
                   <a
@@ -343,6 +371,40 @@
       </section>
       <!-- ===== Small Features End ===== -->
 
+      <section class="i pg ji gp uq">
+        <!-- Bg Shapes -->
+        <span class="rc h s r vd fd/5 fh rm"></span>
+        <img src="images/shape-08.svg" alt="Shape Bg" class="h q r" />
+        <img src="images/shape-09.svg" alt="Shape" class="of h y z/2" />
+        <img src="images/shape-10.svg" alt="Shape" class="h _ aa" />
+        <img src="images/shape-11.svg" alt="Shape" class="of h m ba" />
+
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `Who We Are`, sectionTitleText: `
+            Intrepid Technology is an IT services and IT
+            consultancy that specializes in creating innovative solutions
+            for businesses. We are passionate about technology and believe
+            in the power of software to transform the world. Our
+            internship program is just one of the ways in which we are
+            investing in the future of the industry.
+            
+            At Intrepid Technology, we believe practical
+            knowledge is the key to success in the tech industry. Our aim
+            is to help students lacking basic skills by offering hands-on
+            learning through live projects and real-world examples.
+          `}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2
+              x-text="sectionTitle"
+              class="fk vj pr kk wm on/5 gq/2 bb _b"
+            ></h2>
+            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+          </div>
+        </div>
+        <!-- Section Title End -->
+      </section>
       <!-- ===== About Start ===== -->
       <section class="ji gp uq 2xl:ud-py-35 pg">
         <div class="bb ze ki xn wq">
@@ -527,6 +589,26 @@
             <!-- Service Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-06.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">E-commerce Development</h4>
+              <p>
+                Complete online store solutions with payment integration,
+                inventory management, and modern shopping experiences.
+              </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-07.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Business App Development</h4>
+              <p>
+                Custom business applications designed to streamline operations
+                and improve productivity across your organization.
+              </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-05.svg" alt="Icon" />
               <h4 class="ek zj kk wm nb _b">Maintenance & Support</h4>
               <p>
                 Ongoing technical support and maintenance to ensure optimal
@@ -537,6 +619,192 @@
         </div>
       </section>
       <!-- ===== Services End ===== -->
+
+      <!-- ===== Internship Offers Start ===== -->
+      <section class="lj tp kr">
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `Internships We Offer!`, sectionTitleText: `Join our exciting internship journey and gain hands-on experience in cutting-edge technologies. We provide practical learning through live projects and real-world examples.`}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2
+              x-text="sectionTitle"
+              class="fk vj pr kk wm on/5 gq/2 bb _b"
+            ></h2>
+            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+          </div>
+        </div>
+        <!-- Section Title End -->
+
+        <div class="bb ze ki xn yq mb en">
+          <div class="wc qf pn xo ng">
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-04.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Web Development</h4>
+              <p>
+                Learn modern web technologies including HTML, CSS, JavaScript,
+                React, and Node.js through hands-on projects.
+              </p>
+              <a
+                href="https://forms.gle/your-internship-form-id"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-06.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Mobile App Development</h4>
+              <p>
+                Master mobile app development using React Native, Flutter, and
+                native iOS/Android development.
+              </p>
+              <a
+                href="https://forms.gle/your-internship-form-id"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-05.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Data Science</h4>
+              <p>
+                Explore data analysis, machine learning, and AI through
+                real-world datasets and industry projects.
+              </p>
+              <a
+                href="https://forms.gle/your-internship-form-id"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-07.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">RPA Automation</h4>
+              <p>
+                Learn Robotic Process Automation using UiPath, Automation
+                Anywhere, and Blue Prism for business process optimization.
+              </p>
+              <a
+                href="https://forms.gle/your-internship-form-id"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-04.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Java Programming</h4>
+              <p>
+                Master Java programming, Spring Framework, and enterprise
+                application development.
+              </p>
+              <a
+                href="https://forms.gle/your-internship-form-id"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-05.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Python Programming</h4>
+              <p>
+                Learn Python for web development, data science, automation, and
+                machine learning applications.
+              </p>
+              <a
+                href="https://forms.gle/your-internship-form-id"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-06.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">UI/UX Design</h4>
+              <p>
+                Master user interface and user experience design using Figma,
+                Adobe XD, and modern design principles.
+              </p>
+              <a
+                href="https://forms.gle/your-internship-form-id"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-07.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Artificial Intelligence</h4>
+              <p>
+                Explore AI concepts, neural networks, and deep learning through
+                practical projects and real-world applications.
+              </p>
+              <a
+                href="https://forms.gle/your-internship-form-id"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="tc uf sn tn xf un gg mt-16">
+          <div class="animate_top bb ze rj ki xn vq">
+            <h3 class="fk vj pr kk wm on/5 gq/2 bb _b mb-4">
+              Ready to Start Your Internship Journey?
+            </h3>
+            <p class="bb on/5 wo/5 hq mb-8">
+              Join hundreds of students who have accelerated their careers with
+              our hands-on internship programs.
+            </p>
+            <div class="tc tf yo zf mb">
+              <a href="careers.html" class="ek jk lk gh gi hi rg ml il vc _d _l"
+                >View All Internships</a
+              >
+              <a
+                href="https://forms.gle/your-internship-form-id"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                  margin-left: 12px;
+                "
+                >Apply Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Internship Offers End ===== -->
 
       <!-- ===== Counter Start ===== -->
       <section class="i pg qh rm ji hp">
@@ -1073,15 +1341,14 @@
                 <h4 class="kk wm tj ec">Quick Links</h4>
 
                 <ul>
-                  <li><a href="#" class="sc xl vb">Home</a></li>
-                  <li><a href="#" class="sc xl vb">Product</a></li>
+                  <li><a href="index.html" class="sc xl vb">Home</a></li>
+                  <li><a href="products.html" class="sc xl vb">Product</a></li>
                   <li>
-                    <a href="#" class="sc xl vb">
+                    <a href="careers.html" class="sc xl vb">
                       Careers
                       <span class="sc ek uj lk nh rg zi _i nc">Hiring</span>
                     </a>
                   </li>
-                  <li><a href="#" class="sc xl vb">Pricing</a></li>
                 </ul>
               </div>
 
@@ -1115,10 +1382,30 @@
                 <h4 class="kk wm tj ec">Support</h4>
 
                 <ul>
-                  <li><a href="#" class="sc xl vb">Company</a></li>
-                  <li><a href="#" class="sc xl vb">Press media</a></li>
-                  <li><a href="#" class="sc xl vb">Our Blog</a></li>
-                  <li><a href="#" class="sc xl vb">Contact Us</a></li>
+                  <li><a href="about-us.html" class="sc xl vb">About Us</a></li>
+                  <li><a href="support.html" class="sc xl vb">Support</a></li>
+                  <li>
+                    <a href="blog-grid.html" class="sc xl vb">Our Blog</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="sc xl vb">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="animate_top">
+                <h4 class="kk wm tj ec">Legal</h4>
+                <ul>
+                  <li>
+                    <a href="privacy-policy.html" class="sc xl vb"
+                      >Privacy Policy</a
+                    >
+                  </li>
+                  <li>
+                    <a href="terms-of-service.html" class="sc xl vb"
+                      >Terms of Service</a
+                    >
+                  </li>
                 </ul>
               </div>
 
@@ -1171,9 +1458,10 @@
         <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
           <div class="animate_top">
             <ul class="tc wf gg">
-              <li><a href="#" class="xl">English</a></li>
-              <li><a href="#" class="xl">Privacy Policy</a></li>
-              <li><a href="#" class="xl">Support</a></li>
+              <li>
+                <a href="privacy-policy.html" class="xl">Privacy Policy</a>
+              </li>
+              <li><a href="support.html" class="xl">Support</a></li>
             </ul>
           </div>
 

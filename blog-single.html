@@ -8,7 +8,8 @@
       Technology Blog | Intrepid Technology - Web Development, Software & IT
       Insights
     </title>
-    <link rel="icon" href="favicon.ico" />
+
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body
@@ -77,16 +78,22 @@
                   >Home</a
                 >
               </li>
-              <li><a href="index.html#features" class="xl">Features</a></li>
+              <li><a href="services.html" class="xl">Services</a></li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="xl"
+                  :class="{ 'mk': page === 'careers' }"
+                  >Careers</a
+                >
+              </li>
               <li class="c i" x-data="{ dropdown: false }">
                 <a
-                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
-                  target="_blank"
                   class="xl tc wf yf bg"
                   @click.prevent="dropdown = !dropdown"
-                  :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"
+                  :class="{ 'mk': page === 'blog-webdev' || page === 'blog-mobile' || page === 'blog-software' || page === 'blog-automation' || page === 'blog-consulting' }"
                 >
-                  Pages
+                  Blogs
 
                   <svg
                     :class="{ 'wh': dropdown }"
@@ -104,48 +111,47 @@
                 <ul class="a" :class="{ 'tc': dropdown }">
                   <li>
                     <a
-                      href="blog-grid.html"
+                      href="blog-webdev.html"
                       class="xl"
-                      :class="{ 'mk': page === 'blog-grid' }"
-                      >Blog Grid</a
+                      :class="{ 'mk': page === 'blog-webdev' }"
+                      >Web Development</a
                     >
                   </li>
                   <li>
                     <a
-                      href="blog-single.html"
+                      href="blog-mobile.html"
                       class="xl"
-                      :class="{ 'mk': page === 'blog-single' }"
-                      >Blog Single</a
+                      :class="{ 'mk': page === 'blog-mobile' }"
+                      >Mobile Apps</a
                     >
                   </li>
                   <li>
                     <a
-                      href="signin.html"
+                      href="blog-software.html"
                       class="xl"
-                      :class="{ 'mk': page === 'signin' }"
-                      >Sign In</a
+                      :class="{ 'mk': page === 'blog-software' }"
+                      >Software Solutions</a
                     >
                   </li>
                   <li>
                     <a
-                      href="signup.html"
+                      href="blog-rpa.html"
                       class="xl"
-                      :class="{ 'mk': page === 'signup' }"
-                      >Sign Up</a
+                      :class="{ 'mk': page === 'blog-rpa' }"
+                      >RPA Automation</a
                     >
                   </li>
                   <li>
                     <a
-                      href="404.html"
+                      href="blog-consulting.html"
                       class="xl"
-                      :class="{ 'mk': page === '404' }"
-                      >404</a
+                      :class="{ 'mk': page === 'blog-consulting' }"
+                      >IT Consulting</a
                     >
                   </li>
                 </ul>
                 <!-- Dropdown End -->
               </li>
-              <li><a href="index.html#support" class="xl">Support</a></li>
             </ul>
           </nav>
 

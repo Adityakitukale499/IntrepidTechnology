@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In | Base - Tailwind CSS Startup Template</title>
-    <link rel="icon" href="favicon.ico" />
+
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body
@@ -74,15 +75,22 @@
                   >Home</a
                 >
               </li>
-              <li><a href="index.html#features" class="xl">Features</a></li>
+              <li><a href="services.html" class="xl">Services</a></li>
+              <li>
+                <a
+                  href="careers.html"
+                  class="xl"
+                  :class="{ 'mk': page === 'careers' }"
+                  >Careers</a
+                >
+              </li>
               <li class="c i" x-data="{ dropdown: false }">
                 <a
-                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank"
                   class="xl tc wf yf bg"
                   @click.prevent="dropdown = !dropdown"
-                  :class="{ 'mk': page === 'blog-grid' || page === 'blog-single' || page === 'signin' || page === 'signup' || page === '404' }"
+                  :class="{ 'mk': page === 'blog-webdev' || page === 'blog-mobile' || page === 'blog-software' || page === 'blog-automation' || page === 'blog-consulting' }"
                 >
-                  Pages
+                  Blogs
 
                   <svg
                     :class="{ 'wh': dropdown }"
@@ -100,48 +108,47 @@
                 <ul class="a" :class="{ 'tc': dropdown }">
                   <li>
                     <a
-                      href="blog-grid.html"
+                      href="blog-webdev.html"
                       class="xl"
-                      :class="{ 'mk': page === 'blog-grid' }"
-                      >Blog Grid</a
+                      :class="{ 'mk': page === 'blog-webdev' }"
+                      >Web Development</a
                     >
                   </li>
                   <li>
                     <a
-                      href="blog-single.html"
+                      href="blog-mobile.html"
                       class="xl"
-                      :class="{ 'mk': page === 'blog-single' }"
-                      >Blog Single</a
+                      :class="{ 'mk': page === 'blog-mobile' }"
+                      >Mobile Apps</a
                     >
                   </li>
                   <li>
                     <a
-                      href="signin.html"
+                      href="blog-software.html"
                       class="xl"
-                      :class="{ 'mk': page === 'signin' }"
-                      >Sign In</a
+                      :class="{ 'mk': page === 'blog-software' }"
+                      >Software Solutions</a
                     >
                   </li>
                   <li>
                     <a
-                      href="signup.html"
+                      href="blog-rpa.html"
                       class="xl"
-                      :class="{ 'mk': page === 'signup' }"
-                      >Sign Up</a
+                      :class="{ 'mk': page === 'blog-rpa' }"
+                      >RPA Automation</a
                     >
                   </li>
                   <li>
                     <a
-                      href="404.html"
+                      href="blog-consulting.html"
                       class="xl"
-                      :class="{ 'mk': page === '404' }"
-                      >404</a
+                      :class="{ 'mk': page === 'blog-consulting' }"
+                      >IT Consulting</a
                     >
                   </li>
                 </ul>
                 <!-- Dropdown End -->
               </li>
-              <li><a href="contact.html" class="xl">Support</a></li>
             </ul>
           </nav>
 
@@ -219,7 +226,8 @@
               <li>
                 <a
                   class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40"
-                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank"
+                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                  target="_blank"
                 >
                   <svg
                     width="22"
@@ -257,7 +265,8 @@
               <li>
                 <a
                   class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40"
-                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank"
+                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                  target="_blank"
                 >
                   <svg
                     width="23"
@@ -276,7 +285,8 @@
               <li>
                 <a
                   class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40"
-                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank"
+                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                  target="_blank"
                 >
                   <svg
                     width="12"
@@ -295,7 +305,8 @@
               <li>
                 <a
                   class="tc wf xf be dd di sg _g ch qm ml il bm rl/40 ym/40"
-                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank"
+                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                  target="_blank"
                 >
                   <svg
                     width="23"
@@ -377,7 +388,10 @@
 
               <ul class="tc wf cg">
                 <li>
-                  <a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                    target="_blank"
+                  >
                     <svg
                       class="vh ul cl il"
                       width="24"
@@ -401,7 +415,10 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                    target="_blank"
+                  >
                     <svg
                       class="vh ul cl il"
                       width="24"
@@ -425,7 +442,10 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                    target="_blank"
+                  >
                     <svg
                       class="vh ul cl il"
                       width="24"
@@ -449,7 +469,10 @@
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                    target="_blank"
+                  >
                     <svg
                       class="vh ul cl il"
                       width="24"
@@ -478,15 +501,40 @@
                 <h4 class="kk wm tj ec">Quick Links</h4>
 
                 <ul>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Home</a></li>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Product</a></li>
                   <li>
-                    <a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Product</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                    >
                       Careers
                       <span class="sc ek uj lk nh rg zi _i nc">Hiring</span>
                     </a>
                   </li>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Pricing</a></li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Pricing</a
+                    >
+                  </li>
                 </ul>
               </div>
 
@@ -494,10 +542,38 @@
                 <h4 class="kk wm tj ec">Services</h4>
 
                 <ul>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Web Development</a></li>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Graphics Design</a></li>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Digital Marketing</a></li>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Ui/Ux Design</a></li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Web Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Graphics Design</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Digital Marketing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Ui/Ux Design</a
+                    >
+                  </li>
                 </ul>
               </div>
 
@@ -505,10 +581,38 @@
                 <h4 class="kk wm tj ec">Support</h4>
 
                 <ul>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Company</a></li>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Press media</a></li>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Our Blog</a></li>
-                  <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="sc xl vb">Contact Us</a></li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Company</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Press media</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Our Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                      target="_blank"
+                      class="sc xl vb"
+                      >Contact Us</a
+                    >
+                  </li>
                 </ul>
               </div>
 
@@ -561,9 +665,30 @@
         <div class="bh ch pm tc uf sf yo wf xf ap cg fp bj">
           <div class="animate_top">
             <ul class="tc wf gg">
-              <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="xl">English</a></li>
-              <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="xl">Privacy Policy</a></li>
-              <li><a href="https://www.linkedin.com/in/intrepid-technology-a43765383/" target="_blank" class="xl">Support</a></li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                  target="_blank"
+                  class="xl"
+                  >English</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                  target="_blank"
+                  class="xl"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/intrepid-technology-a43765383/"
+                  target="_blank"
+                  class="xl"
+                  >Support</a
+                >
+              </li>
             </ul>
           </div>
 
