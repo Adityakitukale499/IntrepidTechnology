@@ -35,7 +35,7 @@
     </style>
   </head>
   <body
-    x-data="{ page: 'careers', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-data="{ page: 'careers', 'darkMode': false, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode'));
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
@@ -116,6 +116,79 @@
                   :class="{ 'mk': page === 'careers' }"
                   >Careers</a
                 >
+              </li>
+              <li class="c i" x-data="{ dropdown: false }">
+                <a
+                  class="xl tc wf yf bg"
+                  @click.prevent="dropdown = !dropdown"
+                  :class="{ 'mk': page === 'internships' }"
+                >
+                  Internships
+
+                  <svg
+                    :class="{ 'wh': dropdown }"
+                    class="th mm we fd pf"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                    />
+                  </svg>
+                </a>
+
+                <!-- Dropdown Start -->
+                <ul class="a" :class="{ 'tc': dropdown }">
+                  <li>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
+                      target="_blank"
+                      class="xl"
+                      >UiPath Program</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
+                      target="_blank"
+                      class="xl"
+                      >Microsoft Power Automate</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
+                      target="_blank"
+                      class="xl"
+                      >Automation Anywhere</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
+                      target="_blank"
+                      class="xl"
+                      >Website Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
+                      target="_blank"
+                      class="xl"
+                      >Mobile App Development</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
+                      target="_blank"
+                      class="xl"
+                      >E-commerce Development</a
+                    >
+                  </li>
+                </ul>
+                <!-- Dropdown End -->
               </li>
               <li class="c i" x-data="{ dropdown: false }">
                 <a
@@ -248,7 +321,7 @@
               </p>
               <div class="tc tf yo zf mb">
                 <a
-                  href="https://forms.gle/your-internship-form-id"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
                   target="_blank"
                   class="ek jk lk gh gi hi rg ml il vc _d _l"
                   style="
@@ -321,10 +394,108 @@
             <!-- Internship Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-04.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Web Development</h4>
+              <h4 class="ek zj kk wm nb _b">UiPath Program</h4>
               <p>
-                Learn modern web technologies including HTML, CSS, JavaScript,
-                React, and Node.js through hands-on projects.
+                Master UiPath RPA development with hands-on training in process
+                automation, workflow design, and bot deployment for enterprise
+                solutions.
+              </p>
+              <div class="mt-4">
+                <span
+                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
+                  >RPA</span
+                >
+                <span
+                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
+                  >Automation</span
+                >
+                <span
+                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
+                  >Enterprise</span
+                >
+              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-05.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">
+                Microsoft Power Automate Program
+              </h4>
+              <p>
+                Learn Microsoft Power Automate to create automated workflows,
+                integrate business processes, and build cloud-based automation
+                solutions.
+              </p>
+              <div class="mt-4">
+                <span
+                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
+                  >Power Automate</span
+                >
+                <span
+                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
+                  >Workflows</span
+                >
+                <span
+                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
+                  >Cloud</span
+                >
+              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-07.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Automation Anywhere Program</h4>
+              <p>
+                Develop expertise in Automation Anywhere platform for
+                intelligent automation, cognitive bots, and enterprise RPA
+                implementation.
+              </p>
+              <div class="mt-4">
+                <span
+                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
+                  >Cognitive Bots</span
+                >
+                <span
+                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
+                  >Intelligent</span
+                >
+                <span
+                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
+                  >Enterprise</span
+                >
+              </div>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
+                target="_blank"
+                class="ek jk lk gh gi hi rg ml il vc _d _l"
+                style="margin-top: 16px; display: inline-block"
+                >Apply</a
+              >
+            </div>
+
+            <!-- Internship Item -->
+            <div class="animate_top sg oi pi zq ml il am cn _m">
+              <img src="images/icon-04.svg" alt="Icon" />
+              <h4 class="ek zj kk wm nb _b">Website Development</h4>
+              <p>
+                Master modern web development with HTML, CSS, JavaScript, React,
+                Node.js, and full-stack development through real-world projects.
               </p>
               <div class="mt-4">
                 <span
@@ -341,7 +512,7 @@
                 >
               </div>
               <a
-                href="https://forms.gle/your-internship-form-id"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
                 target="_blank"
                 class="ek jk lk gh gi hi rg ml il vc _d _l"
                 style="margin-top: 16px; display: inline-block"
@@ -354,8 +525,9 @@
               <img src="images/icon-06.svg" alt="Icon" />
               <h4 class="ek zj kk wm nb _b">Mobile App Development</h4>
               <p>
-                Master mobile app development using React Native, Flutter, and
-                native iOS/Android development.
+                Build cross-platform mobile applications using React Native,
+                Flutter, and native iOS/Android development with modern UI/UX
+                principles.
               </p>
               <div class="mt-4">
                 <span
@@ -372,7 +544,7 @@
                 >
               </div>
               <a
-                href="https://forms.gle/your-internship-form-id"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
                 target="_blank"
                 class="ek jk lk gh gi hi rg ml il vc _d _l"
                 style="margin-top: 16px; display: inline-block"
@@ -383,306 +555,28 @@
             <!-- Internship Item -->
             <div class="animate_top sg oi pi zq ml il am cn _m">
               <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Data Science</h4>
+              <h4 class="ek zj kk wm nb _b">E-commerce Development</h4>
               <p>
-                Explore data analysis, machine learning, and AI through
-                real-world datasets and industry projects.
+                Learn to build complete e-commerce solutions with payment
+                integration, inventory management, and modern shopping
+                experiences using latest technologies.
               </p>
               <div class="mt-4">
                 <span
                   class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Python</span
+                  >Payment</span
                 >
                 <span
                   class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >R</span
+                  >Inventory</span
                 >
                 <span
                   class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >Machine Learning</span
+                  >Modern UI</span
                 >
               </div>
               <a
-                href="https://forms.gle/your-internship-form-id"
-                target="_blank"
-                class="ek jk lk gh gi hi rg ml il vc _d _l"
-                style="margin-top: 16px; display: inline-block"
-                >Apply</a
-              >
-            </div>
-
-            <!-- Internship Item -->
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-07.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">RPA Automation</h4>
-              <p>
-                Learn Robotic Process Automation using UiPath, Automation
-                Anywhere, and Blue Prism for business process optimization.
-              </p>
-              <div class="mt-4">
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >UiPath</span
-                >
-                <span
-                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Automation Anywhere</span
-                >
-                <span
-                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >Blue Prism</span
-                >
-              </div>
-              <a
-                href="https://forms.gle/your-internship-form-id"
-                target="_blank"
-                class="ek jk lk gh gi hi rg ml il vc _d _l"
-                style="margin-top: 16px; display: inline-block"
-                >Apply</a
-              >
-            </div>
-
-            <!-- Internship Item -->
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-04.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Java Programming</h4>
-              <p>
-                Master Java programming, Spring Framework, and enterprise
-                application development.
-              </p>
-              <div class="mt-4">
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Core Java</span
-                >
-                <span
-                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Spring Boot</span
-                >
-                <span
-                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >Enterprise</span
-                >
-              </div>
-              <a
-                href="https://forms.gle/your-internship-form-id"
-                target="_blank"
-                class="ek jk lk gh gi hi rg ml il vc _d _l"
-                style="margin-top: 16px; display: inline-block"
-                >Apply</a
-              >
-            </div>
-
-            <!-- Internship Item -->
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Python Programming</h4>
-              <p>
-                Learn Python for web development, data science, automation, and
-                machine learning applications.
-              </p>
-              <div class="mt-4">
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Django</span
-                >
-                <span
-                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Flask</span
-                >
-                <span
-                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >FastAPI</span
-                >
-              </div>
-              <a
-                href="https://forms.gle/your-internship-form-id"
-                target="_blank"
-                class="ek jk lk gh gi hi rg ml il vc _d _l"
-                style="margin-top: 16px; display: inline-block"
-                >Apply</a
-              >
-            </div>
-
-            <!-- Internship Item -->
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-06.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">UI/UX Design</h4>
-              <p>
-                Master user interface and user experience design using Figma,
-                Adobe XD, and modern design principles.
-              </p>
-              <div class="mt-4">
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Figma</span
-                >
-                <span
-                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Adobe XD</span
-                >
-                <span
-                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >Prototyping</span
-                >
-              </div>
-              <a
-                href="https://forms.gle/your-internship-form-id"
-                target="_blank"
-                class="ek jk lk gh gi hi rg ml il vc _d _l"
-                style="margin-top: 16px; display: inline-block"
-                >Apply</a
-              >
-            </div>
-
-            <!-- Internship Item -->
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-07.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Artificial Intelligence</h4>
-              <p>
-                Explore AI concepts, neural networks, and deep learning through
-                practical projects and real-world applications.
-              </p>
-              <div class="mt-4">
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >TensorFlow</span
-                >
-                <span
-                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >PyTorch</span
-                >
-                <span
-                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >Deep Learning</span
-                >
-              </div>
-              <a
-                href="https://forms.gle/your-internship-form-id"
-                target="_blank"
-                class="ek jk lk gh gi hi rg ml il vc _d _l"
-                style="margin-top: 16px; display: inline-block"
-                >Apply</a
-              >
-            </div>
-
-            <!-- Internship Item -->
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-04.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Machine Learning</h4>
-              <p>
-                Dive deep into machine learning algorithms, model training, and
-                deployment for real-world applications.
-              </p>
-              <div class="mt-4">
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Scikit-learn</span
-                >
-                <span
-                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Pandas</span
-                >
-                <span
-                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >NumPy</span
-                >
-              </div>
-              <a
-                href="https://forms.gle/your-internship-form-id"
-                target="_blank"
-                class="ek jk lk gh gi hi rg ml il vc _d _l"
-                style="margin-top: 16px; display: inline-block"
-                >Apply</a
-              >
-            </div>
-
-            <!-- Internship Item -->
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-05.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">Flutter Developer</h4>
-              <p>
-                Build cross-platform mobile applications using Flutter framework
-                and Dart programming language.
-              </p>
-              <div class="mt-4">
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Dart</span
-                >
-                <span
-                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Flutter</span
-                >
-                <span
-                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >Cross-Platform</span
-                >
-              </div>
-              <a
-                href="https://forms.gle/your-internship-form-id"
-                target="_blank"
-                class="ek jk lk gh gi hi rg ml il vc _d _l"
-                style="margin-top: 16px; display: inline-block"
-                >Apply</a
-              >
-            </div>
-
-            <!-- Internship Item -->
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-06.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">ReactJS Developer</h4>
-              <p>
-                Master React.js ecosystem including Redux, Next.js, and modern
-                frontend development practices.
-              </p>
-              <div class="mt-4">
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >React</span
-                >
-                <span
-                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Redux</span
-                >
-                <span
-                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >Next.js</span
-                >
-              </div>
-              <a
-                href="https://forms.gle/your-internship-form-id"
-                target="_blank"
-                class="ek jk lk gh gi hi rg ml il vc _d _l"
-                style="margin-top: 16px; display: inline-block"
-                >Apply</a
-              >
-            </div>
-
-            <!-- Internship Item -->
-            <div class="animate_top sg oi pi zq ml il am cn _m">
-              <img src="images/icon-07.svg" alt="Icon" />
-              <h4 class="ek zj kk wm nb _b">JavaScript Developer</h4>
-              <p>
-                Learn modern JavaScript (ES6+), Node.js, and full-stack
-                development with JavaScript technologies.
-              </p>
-              <div class="mt-4">
-                <span
-                  class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >ES6+</span
-                >
-                <span
-                  class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full mr-2"
-                  >Node.js</span
-                >
-                <span
-                  class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
-                  >Express</span
-                >
-              </div>
-              <a
-                href="https://forms.gle/your-internship-form-id"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_Fy8ms7b7AvsgrlymG-8LbKYdjMH1Nk4E4yss8Z4C6dchBg/viewform"
                 target="_blank"
                 class="ek jk lk gh gi hi rg ml il vc _d _l"
                 style="margin-top: 16px; display: inline-block"

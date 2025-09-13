@@ -38,7 +38,7 @@
     </style>
   </head>
   <body
-    x-data="{ page: 'products', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-data="{ page: 'products', 'darkMode': false, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode'));
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
@@ -579,6 +579,244 @@
         </div>
       </section>
 
+      <!-- ===== Mobile Apps Section Start ===== -->
+      <section class="lj tp kr">
+        <!-- Section Title Start -->
+        <div
+          x-data="{ sectionTitle: `Android & iOS Mobile Applications`, sectionTitleText: `Transform your business with powerful mobile applications. We develop native and cross-platform mobile apps for Android and iOS that deliver exceptional user experiences and drive business growth.`}"
+        >
+          <div class="animate_top bb ze rj ki xn vq">
+            <h2
+              x-text="sectionTitle"
+              class="fk vj pr kk wm on/5 gq/2 bb _b"
+            ></h2>
+            <p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
+          </div>
+        </div>
+        <!-- Section Title End -->
+
+        <div class="bb ye ki xn vq jb jo">
+          <div class="wc qf pn xo zf iq">
+            <!-- Mobile App Item -->
+            <div class="animate_top sg vk rm xm">
+              <div
+                class="c rc i z-1"
+                style="width: 100%; height: 500px; overflow: hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="images/ecommerce.png"
+                  alt="E-commerce Mobile App"
+                />
+              </div>
+
+              <div class="yh">
+                <div class="tc uf wf ag jq">
+                  <div class="tc wf ag">
+                    <img src="images/icon-man.svg" alt="User" />
+                    <p>Intrepid Technology</p>
+                  </div>
+                  <div class="tc wf ag">
+                    <span
+                      class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full"
+                      >E-commerce</span
+                    >
+                  </div>
+                </div>
+                <h4 class="ek tj ml il kk wm xl eq lb">
+                  <a href="contact.html">E-commerce Mobile Apps</a>
+                </h4>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Complete mobile shopping solutions with payment integration,
+                  inventory management, and user-friendly interfaces.
+                </p>
+              </div>
+            </div>
+
+            <!-- Mobile App Item -->
+            <div class="animate_top sg vk rm xm">
+              <div
+                class="c rc i z-1"
+                style="width: 100%; height: 500px; overflow: hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="images/bussiness.png"
+                  alt="Business Mobile App"
+                />
+              </div>
+
+              <div class="yh">
+                <div class="tc uf wf ag jq">
+                  <div class="tc wf ag">
+                    <img src="images/icon-man.svg" alt="User" />
+                    <p>Intrepid Technology</p>
+                  </div>
+                  <div class="tc wf ag">
+                    <span
+                      class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full"
+                      >Business</span
+                    >
+                  </div>
+                </div>
+                <h4 class="ek tj ml il kk wm xl eq lb">
+                  <a href="contact.html">Business Management Apps</a>
+                </h4>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Streamline operations with custom business apps for project
+                  management, CRM, and team collaboration.
+                </p>
+              </div>
+            </div>
+
+            <!-- Mobile App Item -->
+            <div class="animate_top sg vk rm xm">
+              <div
+                class="c rc i z-1"
+                style="width: 100%; height: 500px; overflow: hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="images/social.png"
+                  alt="Social Media App"
+                />
+              </div>
+
+              <div class="yh">
+                <div class="tc uf wf ag jq">
+                  <div class="tc wf ag">
+                    <img src="images/icon-man.svg" alt="User" />
+                    <p>Intrepid Technology</p>
+                  </div>
+                  <div class="tc wf ag">
+                    <span
+                      class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full"
+                      >Social</span
+                    >
+                  </div>
+                </div>
+                <h4 class="ek tj ml il kk wm xl eq lb">
+                  <a href="contact.html">Social & Community Apps</a>
+                </h4>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Build engaging social platforms and community apps with
+                  real-time messaging and content sharing features.
+                </p>
+              </div>
+            </div>
+
+            <!-- Mobile App Item -->
+            <div class="animate_top sg vk rm xm">
+              <div
+                class="c rc i z-1"
+                style="width: 100%; height: 500px; overflow: hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="images/helthcare.png"
+                  alt="Healthcare App"
+                />
+              </div>
+
+              <div class="yh">
+                <div class="tc uf wf ag jq">
+                  <div class="tc wf ag">
+                    <img src="images/icon-man.svg" alt="User" />
+                    <p>Intrepid Technology</p>
+                  </div>
+                  <div class="tc wf ag">
+                    <span
+                      class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full"
+                      >Healthcare</span
+                    >
+                  </div>
+                </div>
+                <h4 class="ek tj ml il kk wm xl eq lb">
+                  <a href="contact.html">Healthcare & Fitness Apps</a>
+                </h4>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Specialized healthcare and fitness applications with health
+                  tracking, appointment booking, and wellness features.
+                </p>
+              </div>
+            </div>
+
+            <!-- Mobile App Item -->
+            <div class="animate_top sg vk rm xm">
+              <div
+                class="c rc i z-1"
+                style="width: 100%; height: 500px; overflow: hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="images/education.png"
+                  alt="Education App"
+                />
+              </div>
+
+              <div class="yh">
+                <div class="tc uf wf ag jq">
+                  <div class="tc wf ag">
+                    <img src="images/icon-man.svg" alt="User" />
+                    <p>Intrepid Technology</p>
+                  </div>
+                  <div class="tc wf ag">
+                    <span
+                      class="inline-block bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full"
+                      >Education</span
+                    >
+                  </div>
+                </div>
+                <h4 class="ek tj ml il kk wm xl eq lb">
+                  <a href="contact.html">Education & Learning Apps</a>
+                </h4>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Interactive learning platforms and educational apps with
+                  course management and progress tracking capabilities.
+                </p>
+              </div>
+            </div>
+
+            <!-- Mobile App Item -->
+            <div class="animate_top sg vk rm xm">
+              <div
+                class="c rc i z-1"
+                style="width: 100%; height: 500px; overflow: hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="images/fintech.png"
+                  alt="Fintech App"
+                />
+              </div>
+
+              <div class="yh">
+                <div class="tc uf wf ag jq">
+                  <div class="tc wf ag">
+                    <img src="images/icon-man.svg" alt="User" />
+                    <p>Intrepid Technology</p>
+                  </div>
+                  <div class="tc wf ag">
+                    <span
+                      class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded-full"
+                      >Fintech</span
+                    >
+                  </div>
+                </div>
+                <h4 class="ek tj ml il kk wm xl eq lb">
+                  <a href="contact.html">Fintech & Banking Apps</a>
+                </h4>
+                <p class="text-gray-600 dark:text-gray-300 mt-2">
+                  Secure financial applications with payment processing, digital
+                  banking, and investment tracking features.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===== Mobile Apps Section End ===== -->
+
       <!-- ===== Theme Stats Start ===== -->
       <section class="i pg qh rm ji hp">
         <img src="images/shape-11.svg" alt="Shape" class="of h ga ha ke" />
@@ -879,27 +1117,9 @@
     <!-- ===== Footer End ===== -->
 
     <!-- ====== Back To Top Start ===== -->
-    <a
-      href="#"
-      class="rc i pf re pd"
-      @click="window.scrollTo({top: 0, behavior: 'smooth'})"
-      @scroll.window="scrollTop = (window.pageYOffset > 50) ? true : false"
-      :class="{ 'd hh rm sr td ud qg ug jc yh': scrollTop }"
-    >
-      <svg
-        class="th lm ml il"
-        width="13"
-        height="13"
-        viewBox="0 0 13 13"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M6.5 0L12.9952 11.5H0.00480938L6.5 0Z" fill="currentColor" />
-      </svg>
-    </a>
+
     <!-- ====== Back To Top End ===== -->
 
     <script defer src="bundle.js"></script>
-    <script src="popup-contact.js"></script>
   </body>
 </html>

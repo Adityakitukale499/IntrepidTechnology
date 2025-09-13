@@ -42,9 +42,9 @@
     </style>
   </head>
   <body
-    x-data="{ page: 'blog-webdev', 'darkMode': true, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
+    x-data="{ page: 'blog-webdev', 'darkMode': false, 'stickyMenu': false, 'navigationOpen': false, 'scrollTop': false }"
     x-init="
-         darkMode = JSON.parse(localStorage.getItem('darkMode')) || true;
+         darkMode = JSON.parse(localStorage.getItem('darkMode')) || false;
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
     :class="{'b eh': darkMode === true}"
   >
