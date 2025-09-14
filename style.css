@@ -541,6 +541,12 @@ h1,  h2,  h3,  h4,  h5,  h6{
   --tw-bg-opacity: 1;
   background-color: rgb(24 28 49 / var(--tw-bg-opacity));
 }
+
+.d{
+  visibility: visible !important;
+  margin-top: 10px;
+}
+
 @media (min-width: 1024px){
 
   .a{
@@ -594,16 +600,19 @@ h1,  h2,  h3,  h4,  h5,  h6{
   .project-sizer{
     width: 50%;
   }
+  
 }
+
 @media (min-width: 1024px){
 
   .project-sizer{
     width: 33.333333%;
   }
+  .d{
+    margin-top: 0px;
+  }
 }
-.d{
-  visibility: visible !important;
-}
+
 .e{
   visibility: visible !important;
 }
